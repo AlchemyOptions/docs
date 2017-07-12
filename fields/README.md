@@ -2,7 +2,7 @@
 
 * [Text](text.md)
 * [Password](password.md)
-* URL
+* [URL](url.md)
 * [Email](email.md)
 * Textarea
 * WYSIWYG
