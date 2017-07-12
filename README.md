@@ -12,12 +12,12 @@ Alchemy Options is a network compatible options plugin for Wordpress. It is grea
 * Dynamic filter for each option
 * Translation ready
 
-## Current field types
+## Current [field types](/fields/README.md)
 
-* Text
-* Password
+* [Text](/fields/text.md)
+* [Password](/fields/password.md)
 * URL
-* Email
+* [Email](/fields/email.md)
 * Textarea
 * WYSIWYG
 * Datepicker

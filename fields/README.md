@@ -3,7 +3,7 @@
 * [Text](text.md)
 * [Password](password.md)
 * URL
-* Email
+* [Email](email.md)
 * Textarea
 * WYSIWYG
 * Datepicker

@@ -5,4 +5,5 @@
 * [Field types](/fields/README.md)
     * [Text](/fields/text.md)
     * [Password](/fields/password.md)
+    * [Email](/fields/email.md)
 * [Sample](/Sample.md)
