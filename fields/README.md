@@ -4,7 +4,7 @@
 * [Password](password.md)
 * [URL](url.md)
 * [Email](email.md)
-* Textarea
+* [Textarea](textarea.md)
 * WYSIWYG
 * Datepicker
 * Image upload

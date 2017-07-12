@@ -18,7 +18,7 @@ Alchemy Options is a network compatible options plugin for Wordpress. It is grea
 * [Password](/fields/password.md)
 * [URL](/fields/url.md)
 * [Email](/fields/email.md)
-* Textarea
+* [Textarea](/fields/textarea.md)
 * WYSIWYG
 * Datepicker
 * Image upload
