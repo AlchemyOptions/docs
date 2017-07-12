@@ -4,3 +4,4 @@
 * [Configuration](/Configuration.md)
 * [Field types](/fields/README.md)
     * [Text](/fields/Text.md)
+* [Sample](/Sample.md)
