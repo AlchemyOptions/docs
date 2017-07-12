@@ -38,8 +38,8 @@ Alchemy Options is a network compatible options plugin for Wordpress. It is grea
 
 ## Contribution
 
-If you feel like this plugin could be extended, or you think you've found a bug (most likely) please create an issue on GitHub.
+If you feel like this plugin could be extended, or you think you've found a bug (most likely) please [create an issue on GitHub](https://github.com/AlchemyOptions/AlchemyOptions).
 
 ## Ready to go?
 
-Please proceed to the Installation instructions or take a look at a sample Configuration object example to get you rolling.
+Please proceed to the Installation instructions or take a look at a sample [Configuration object example](Sample.md) to get you rolling.
