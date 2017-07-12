@@ -10,6 +10,9 @@
             "styles": {
                 "website": "build/gitbook.css"
             }
+        },
+        "links": {
+            "home": null
         }
     }
 }
