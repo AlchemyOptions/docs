@@ -22,10 +22,10 @@ This will produce the following
 
 ## Params
 
-| Name | Required | Description |
-| --- | --- | --- |
-| `type` | **Yes** | `text`
-| `id` | **Yes** | Unique ID that will be used to retrieve the value
-| `tab` | **Yes** | Specifies in which tab this option will be rendered
-| `title` | No (optional) | If added, shows a heading to the left of the field
-| `desc` | No (optional) | Description text (can have HTML)
+| Name | Description |
+| --- | --- |
+| `type` | `text` **(required)**
+| `id` | Unique ID that will be used to retrieve the value **(required)**
+| `tab` | Specifies in which tab this option will be rendered **(required)**
+| `title` | Shows a heading to the left of the field
+| `desc` | Shows a description text (can have HTML)
