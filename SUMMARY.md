@@ -2,3 +2,4 @@
 
 * [Read Me](/README.md)
 * [Field types](/fields/README.md)
+    * [Text](/fields/Text.md)
