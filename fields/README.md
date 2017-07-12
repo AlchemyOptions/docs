@@ -1,7 +1,7 @@
 # Field Types
 
-* [Text](Text.md)
-* Password
+* [Text](text.md)
+* [Password](password.md)
 * URL
 * Email
 * Textarea

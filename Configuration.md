@@ -1,6 +1,6 @@
 # Configuration
 
-To use Alchemy Options in your theme, add a function to the `admin_init` hook. If you've used Option Tree before, this should be pretty familiar. A [sample configuration object](Sample.md) for a quick copy and paste is available.
+To use Alchemy Options in your theme, add a function to the `admin_init` hook in your `functions.php`. If you've used Option Tree before, this should be pretty familiar. A [sample configuration object](Sample.md) for a quick copy and paste is available.
 
 ```php
 function add_custom_options() {

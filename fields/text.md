@@ -18,7 +18,7 @@ array(
 
 This will produce the following
 
-![gras](../assets/text.jpg)
+![](../assets/text.png)
 
 ## Params
 
