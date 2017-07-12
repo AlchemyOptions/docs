@@ -1,0 +1,15 @@
+{
+    "gitbook": "3.2.2",
+    "title": "Alchemy Options",
+    "plugins": ["prism", "-highlight", "github", "anchorjs"],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/AlchemyOptions/AlchemyOptions/"
+        },
+        "theme-default": {
+            "styles": {
+                "website": "build/gitbook.css"
+            }
+        }
+    }
+}
