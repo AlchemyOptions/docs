@@ -1,6 +1,6 @@
 # Field Types
 
-* [Text](/fields/text.md)
+* [Text](text.md)
 * Password
 * URL
 * Email
