@@ -1,6 +1,6 @@
 # Select Field
 
-Select field renders a native select element. Respects [`disabled` attribute](#disabled) options. Can have [`optgroup`s](#optgroups).
+Select field renders a native select element. Supports [`optgroup`s](#optgroups) and [`disabled` attributes](#disabled).
  
 ## Example configuration
 
