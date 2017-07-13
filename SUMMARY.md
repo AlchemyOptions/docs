@@ -11,4 +11,5 @@
     * [Editor (WYSIWYG)](/fields/editor.md)
     * [Datepicker](/fields/datepicker.md)
     * [Image upload](/fields/upload.md)
+    * [Radio buttons](/fields/radio.md)
 * [Sample](/Sample.md)

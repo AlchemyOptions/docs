@@ -8,7 +8,7 @@
 * [Editor (WYSIWYG)](editor.md)
 * [Datepicker](datepicker.md)
 * [Image upload](upload.md)
-* Radio buttons
+* [Radio buttons](radio.md)
 * Select
 * Checkbox
 * Multiple select
