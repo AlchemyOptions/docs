@@ -26,6 +26,6 @@ This will produce the following
 | --- | --- |
 | `type` | `email` **(required)**
 | `id` | Unique ID that will be used to retrieve the value **(required)**
-| `tab` | Specifies in which tab this option will be rendered **(required)**
+| `tab` | Specifies in which tab this option will be rendered
 | `title` | Shows a heading to the left of the field
 | `desc` | Shows a description text (can have HTML)

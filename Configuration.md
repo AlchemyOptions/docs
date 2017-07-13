@@ -10,11 +10,6 @@ function add_custom_options() {
     $saved_settings = get_option( alch_options_id(), array() );
 
     $custom_settings = array(
-        'tabs' => array(
-            'main' => array(
-                'title' => 'Main'
-            ),
-        ),
         'options' => array(
             /* options will go here */
         ),
@@ -32,8 +27,41 @@ function add_custom_options() {
 add_action( 'admin_init', 'add_custom_options' );
 ```
 
-## Concept
-
-All Alchemy Options are split into tabs. Each tab's options may further be grouped within sections.
-
 That's it, just add [some options](fields/README.md) instead of `/* options will go here */` and see them appear on the Alchemy Options page.
+
+## Grouping
+
+If there's a need to split options into several groups, Alchemy Options has got you covered. You may add the `tabs` section to the config that looks like this:
+
+```php
+'tabs' => array(
+    'tab-one-id' => array(
+        'title' => 'Tab one'
+    ),
+    'tab-two-id' => array(
+        'title' => 'Tab two'
+    ),
+)
+```
+
+Keys of the `tabs` array should be unique, these values will be used in configuring of each option with the `tab` key. If no `tab` key is found in each option's settings it will be rendered in each tab.
+
+Thus, the `$custom_settings` variable from above will look like this:
+
+```php
+$custom_settings = array(
+    'tabs' => array(
+        'tab-one-id' => array(
+            'title' => 'Tab one'
+        ),
+        'tab-two-id' => array(
+            'title' => 'Tab two'
+        ),
+    ),
+    'options' => array(
+      /* options will go here */
+    )
+);
+```
+
+If there's a need to split options even further, there's a `sections` type for that.
