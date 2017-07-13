@@ -21,7 +21,7 @@ This will produce the following
 
 ![](../assets/select-one.png)
 
-It will use the option text as the value. If you wish to separate values from option text use the following syntax for the `choices` key:
+It will use the option text as the value. If you wish to separate values from option texts use the following syntax for the `choices` key:
 
 ```php
 'choices' => array(
@@ -70,7 +70,7 @@ Notice that the third option is not selectable.
 
 ## `optgroup`s
 
-You can create complext select elements with `optgroup`s. To do that, use the `optgroups` key instead of `choices`. Each `optgroup` has the following signature:
+You can create complex select elements with `optgroup`s. To do that, use the `optgroups` key instead of `choices`. Each `optgroup` has the following signature:
 
 ```php
 array(
