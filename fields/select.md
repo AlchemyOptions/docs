@@ -1,6 +1,6 @@
 # Select Field
 
-Select field renders a native select element. Supports [`optgroup`s](#optgroups) and [`disabled` attributes](#disabled).
+Select field renders a native select element. Supports [`optgroups`](#optgroups) and [`disabled` attributes](#disabled).
  
 ## Example configuration
 
@@ -68,9 +68,9 @@ will result in the following
 
 Notice that the third option is not selectable.
 
-## `optgroup`s
+## `optgroups`
 
-You can create complex select elements with `optgroup`s. To do that, use the `optgroups` key instead of `choices`. Each `optgroup` has the following signature:
+You can create complex select elements with `optgroups`. To do that, use the `optgroups` key instead of `choices`. Each `optgroup` has the following signature:
 
 ```php
 array(
@@ -129,7 +129,7 @@ will result in the following
 
 ![](../assets/select-three.png)
 
-Note that the whole second `optgroup` is disabled because the `disabled` key is specified for the `optgoup` itself, not like individual `disabled` keys in `optgroup`s 1 and 3.
+Note that the whole second `optgroup` is disabled because the `disabled` key is specified for the `optgoup` itself, not like individual `disabled` keys in groups 1 and 3.
 
 ## Params
 
@@ -141,4 +141,4 @@ Note that the whole second `optgroup` is disabled because the `disabled` key is 
 | `title` | string | Shows a heading to the left of the field
 | `desc` | string | Shows a description text (can have HTML)
 | `choices` | array | Can be an array of strings or an array of arrays with `value` and `label` keys. See [examples](#example-configuration) above.
-| `optgroups` | array | Array of arrays with `label` and `choices` keys. See [`optgroup`s](#optgroups) above.
+| `optgroups` | array | Array of arrays with `label` and `choices` keys. See [`optgroups`](#optgroups) above.
