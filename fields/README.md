@@ -7,7 +7,7 @@
 * [Textarea](textarea.md)
 * [Editor (WYSIWYG)](editor.md)
 * [Datepicker](datepicker.md)
-* Image upload
+* [Image upload](upload.md)
 * Radio buttons
 * Select
 * Checkbox

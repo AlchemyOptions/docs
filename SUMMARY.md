@@ -10,4 +10,5 @@
     * [Textarea](/fields/textarea.md)
     * [Editor (WYSIWYG)](/fields/editor.md)
     * [Datepicker](/fields/datepicker.md)
+    * [Image upload](/fields/upload.md)
 * [Sample](/Sample.md)

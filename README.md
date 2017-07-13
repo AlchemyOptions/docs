@@ -2,8 +2,6 @@
 
 Alchemy Options is a network compatible options plugin for Wordpress. It is greatly inspired by [OptionTree](https://wordpress.org/plugins/option-tree/) and [Archetype](https://our.umbraco.org/projects/backoffice-extensions/archetype/).
 
-Документация на русском языке [здесь](/ru).
-
 ## Features
 
 * Multiple WYSIWYG editors (including dynamic creation in a Repeater field)
@@ -21,7 +19,7 @@ Alchemy Options is a network compatible options plugin for Wordpress. It is grea
 * [Textarea](/fields/textarea.md)
 * [Editor (WYSIWYG)](/fields/editor.md)
 * [Datepicker](/fields/datepicker.md)
-* Image upload
+* [Image upload](/fields/upload.md)
 * Radio buttons
 * Select
 * Checkbox
