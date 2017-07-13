@@ -40,4 +40,4 @@ If you feel like this plugin could be extended, or you think you've found a bug 
 
 ## Ready to go?
 
-Please proceed to the Installation instructions or take a look at a sample [Configuration object example](Sample.md) to get you rolling.
+Please proceed to the Installation instructions or take a look at [configuration object examples](Samples.md) to get you rolling.
