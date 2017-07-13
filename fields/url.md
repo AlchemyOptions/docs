@@ -22,10 +22,10 @@ This will produce the following
 
 ## Params
 
-| Name | Description |
-| --- | --- |
-| `type` | `url` **(required)**
-| `id` | Unique ID that will be used to retrieve the value **(required)**
-| `tab` | Specifies in which tab this option will be rendered
-| `title` | Shows a heading to the left of the field
-| `desc` | Shows a description text (can have HTML)
+| Name | Type | Description |
+| --- | --- | --- |
+| `type` | string | `url` **(required)**
+| `id` | string | Unique ID that will be used to retrieve the value **(required)**
+| `tab` | string | Specifies in which tab this option will be rendered
+| `title` | string | Shows a heading to the left of the field
+| `desc` | string | Shows a description text (can have HTML)
