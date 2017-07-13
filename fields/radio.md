@@ -1,6 +1,6 @@
 # Radio Field
 
-Text field renders a simple text input.
+Radio field renders a set of radio buttons. Respects initial [`checked` or `disabled` attributes](#checked-and-disabled).
  
 ## Example configuration
 
