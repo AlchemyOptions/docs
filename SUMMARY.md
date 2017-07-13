@@ -8,4 +8,5 @@
     * [URL](/fields/url.md)
     * [Email](/fields/email.md)
     * [Textarea](/fields/textarea.md)
+    * [Editor (WYSIWYG)](/fields/editor.md)
 * [Sample](/Sample.md)

@@ -5,7 +5,7 @@
 * [URL](url.md)
 * [Email](email.md)
 * [Textarea](textarea.md)
-* WYSIWYG
+* [Editor (WYSIWYG)](editor.md)
 * Datepicker
 * Image upload
 * Radio buttons
