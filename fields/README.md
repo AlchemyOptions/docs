@@ -9,7 +9,7 @@
 * [Datepicker](datepicker.md)
 * [Image upload](upload.md)
 * [Radio buttons](radio.md)
-* Select
+* [Select](select.md)
 * Checkbox
 * Multiple select
 * Colorpicker

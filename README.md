@@ -21,7 +21,7 @@ Alchemy Options is a network compatible options plugin for Wordpress. It is grea
 * [Datepicker](/fields/datepicker.md)
 * [Image upload](/fields/upload.md)
 * [Radio buttons](/fields/radio.md)
-* Select
+* [Select](/fields/select.md)
 * Checkbox
 * Multiple select
 * Colorpicker
