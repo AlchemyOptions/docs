@@ -6,7 +6,7 @@
 * [Email](email.md)
 * [Textarea](textarea.md)
 * [Editor (WYSIWYG)](editor.md)
-* Datepicker
+* [Datepicker](datepicker.md)
 * Image upload
 * Radio buttons
 * Select

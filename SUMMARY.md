@@ -9,4 +9,5 @@
     * [Email](/fields/email.md)
     * [Textarea](/fields/textarea.md)
     * [Editor (WYSIWYG)](/fields/editor.md)
+    * [Datepicker](/fields/datepicker.md)
 * [Sample](/Sample.md)
