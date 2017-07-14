@@ -1,4 +1,4 @@
-# Alchemy Options
+#  {% raw %}<img src='../assets/alchemy-logo.svg' width="50" height="50" alt="Alchemy Options logo" />{% endraw %} Alchemy Options
 
 Alchemy Options is a network compatible options plugin for Wordpress. It is greatly inspired by [OptionTree](https://wordpress.org/plugins/option-tree/) and [Archetype](https://our.umbraco.org/projects/backoffice-extensions/archetype/).
 
