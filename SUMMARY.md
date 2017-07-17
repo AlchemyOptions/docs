@@ -18,4 +18,5 @@
     * [Image radio](/fields/image-radio.md)
     * [Post type select](/fields/post-type-select.md)
     * [Datalist](/fields/datalist.md)
+    * [Taxonomy select](/fields/taxonomy-select.md)
 * [Samples](/Samples.md)

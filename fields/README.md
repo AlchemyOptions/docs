@@ -18,5 +18,5 @@
 * Repeater
 * Button group (with simple condition)
 * Numeric slider
-* Taxonomy choice (single and multiple)
+* [Taxonomy select (single and multiple)](taxonomy-select.md)
 * Field group

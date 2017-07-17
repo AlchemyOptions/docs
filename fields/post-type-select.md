@@ -57,4 +57,4 @@ will result in the following
 | `title` | string | Shows a heading to the left of the field
 | `desc` | string | Shows a description text (can have HTML)
 | `multiple` | boolean | Set to `true` if multiple values are needed. See [an example](#multiple-choice) above.
-| `post-type` | string | Post type (standard or custom) to search for. If not specified, searches in `post`.
+| `post-type` | string | Post type (standard or custom) to search for. If not specified, searches posts of the `post` type.
