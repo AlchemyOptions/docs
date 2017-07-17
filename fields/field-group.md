@@ -34,7 +34,7 @@ This will produce the following
 
 ## Description
 
-A Field Group is useful when you'd like to group related field and retrieve them as one complex value. The `fields` array contains regular fields configurations.
+A Field Group is useful when you'd like to group related fields and retrieve them as one complex value. The `fields` array contains regular fields configurations.
 
 The `id` field for the fields in a group should not necessarily be unique, in fact, it's much nicer when it is simple. See the [configuration example](#example-configuration) where the fields have such IDs as `title` and `content`. If there's another `field-group` on the page, it's OK to reuse `title` and `content` as IDs in its `fields` array too. One just needs to make sure that the ID of the `field-group` itself is unique.
 

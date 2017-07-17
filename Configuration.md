@@ -1,6 +1,6 @@
 # Configuration
 
-To use Alchemy Options in your theme, add a function to the `admin_init` hook in your `functions.php`. If you've used Option Tree before, this should be pretty familiar. [Sample configuration objects](Samples.md) are available for a quick copy and paste.
+To use Alchemy Options in your theme, make sure you've installed the Alchemy Options plugin. Then add a function to the `admin_init` hook in your `functions.php`. If you've used Option Tree before, this should be pretty familiar. [Sample configuration objects](Samples.md) are available for a quick copy and paste.
 
 ```php
 function add_custom_options() {
@@ -64,4 +64,4 @@ $custom_settings = array(
 );
 ```
 
-If there's a need to split options even further, there's a `sections` type for that.
+If there's a need to split options even further, there's a `sections` type for visual splitting of fields into togglable sections and a [`field-group`](fields/field-group.md) type to group related fields together for an easier value retrieval.
