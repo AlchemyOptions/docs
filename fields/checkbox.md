@@ -1,17 +1,17 @@
-# Radio Field
+# Checkbox Field
 
-Radio field renders a set of radio buttons. Supports initial [`checked` or `disabled` attributes](#checked-and-disabled).
+Checkbox field renders a set of native labeled checkboxes. Supports initial [`checked` or `disabled` attributes](#checked-and-disabled).
  
 ## Example configuration
 
 ```php
 ...
 array(
-    'title' => 'My radio field title',
-    'id' => 'radio-option',
+    'title' => 'My checkbox field title',
+    'id' => 'checkbox-option',
     'desc' => 'Short description for the field',
     'tab' => 'main',
-    'type' => 'radio',
+    'type' => 'checkbox',
     'choices' => ['First label', 'Second label', 'Third label']
 ),
 ...
@@ -19,7 +19,7 @@ array(
 
 This will produce the following
 
-![](../assets/radio-one.png)
+![](../assets/checkbox-one.png)
 
 It will use the label text as the value. If you wish to separate values from labels use the following syntax for the `choices` key:
 
@@ -65,7 +65,7 @@ If `checked` or `disabled` keys are specified, they'll be respected. E.g:
 
 will result in the following
 
-![](../assets/radio-two.png)
+![](../assets/checkbox-two.png)
 
 Notice that the second option is checked on initial page load and the third option is not checkable.
 
@@ -73,9 +73,9 @@ Notice that the second option is checked on initial page load and the third opti
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | string | `radio` **(required)**
+| `type` | string | `checkbox` **(required)**
 | `id` | string | Unique ID that will be used to retrieve the value **(required)**
 | `tab` | string | Specifies in which tab this option will be rendered
 | `title` | string | Shows a heading to the left of the field
 | `desc` | string | Shows a description text (can have HTML)
-| `choices` | array | Kind of required, but will not render anything if no radio choices are provided. Can be an array of strings or an array of arrays with `value` and `label` keys. See [examples](#example-configuration) above.
+| `choices` | array | Kind of required, but will not render anything if no choices are provided. Can be an array of strings or an array of arrays with `value` and `label` keys. See [examples](#example-configuration) above.

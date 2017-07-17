@@ -13,4 +13,5 @@
     * [Image upload](/fields/upload.md)
     * [Radio buttons](/fields/radio.md)
     * [Select](/fields/select.md)
+    * [Checkbox](/fields/checkbox.md)
 * [Samples](/Samples.md)

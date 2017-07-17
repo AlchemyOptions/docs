@@ -10,7 +10,7 @@
 * [Image upload](upload.md)
 * [Radio buttons](radio.md)
 * [Select](select.md)
-* Checkbox
+* [Checkbox](checkbox.md)
 * Multiple select
 * Colorpicker
 * Image radio
