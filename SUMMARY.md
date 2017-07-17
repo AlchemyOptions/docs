@@ -20,4 +20,5 @@
     * [Datalist](/fields/datalist.md)
     * [Slider](/fields/slider.md)
     * [Taxonomy select](/fields/taxonomy-select.md)
+    * [Field group](/fields/field-group.md)
 * [Samples](/Samples.md)

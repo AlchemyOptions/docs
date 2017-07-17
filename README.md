@@ -31,7 +31,7 @@ Alchemy Options is an options plugin for Wordpress, simple but powerful. Inspire
 * Button group (with simple condition)
 * [Slider](/fields/slider.md)
 * [Taxonomy select (single and multiple)](/fields/taxonomy-select.md)
-* Field group
+* [Field group](/fields/field-group.md)
 
 ## Contribution
 
