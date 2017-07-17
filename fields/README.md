@@ -17,6 +17,6 @@
 * [Datalist](datalist.md)
 * Repeater
 * Button group (with simple condition)
-* Numeric slider
+* [Slider](slider.md)
 * [Taxonomy select (single and multiple)](taxonomy-select.md)
 * Field group
