@@ -16,4 +16,5 @@
     * [Checkbox](/fields/checkbox.md)
     * [Colorpicker](/fields/colorpicker.md)
     * [Image radio](/fields/image-radio.md)
+    * [Post type select](/fields/post-type-select.md)
 * [Samples](/Samples.md)

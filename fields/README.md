@@ -13,7 +13,7 @@
 * [Checkbox](checkbox.md)
 * [Colorpicker](colorpicker.md)
 * [Image radio](image-radio.md)
-* Post/page/custom post type choice (single and multiple)
+* [Post type select (single and multiple)](post-type-select.md)
 * Datalist
 * Repeater
 * Button group (with simple condition)
