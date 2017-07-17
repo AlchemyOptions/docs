@@ -14,7 +14,7 @@
 * [Colorpicker](colorpicker.md)
 * [Image radio](image-radio.md)
 * [Post type select (single and multiple)](post-type-select.md)
-* Datalist
+* [Datalist](datalist.md)
 * Repeater
 * Button group (with simple condition)
 * Numeric slider

@@ -1,6 +1,6 @@
 # Post Type Select Field
 
-Post type select field renders a [Select 2](https://select2.github.io/) field that will provide a list of post type titles when a user has typed at least two characters (the values will be loaded dynamically). Supports [multiple choice](#multiple-choice).
+Post type select field renders a searchable [Select 2](https://select2.github.io/) field that will provide a list of post type titles when a user has typed at least two characters (the values will be loaded dynamically). Similar to the [Datalist](datalist.md) field. Supports [multiple choice](#multiple-choice).
 
 ## Description
 
