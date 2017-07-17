@@ -11,7 +11,6 @@
 * [Radio buttons](radio.md)
 * [Select](select.md)
 * [Checkbox](checkbox.md)
-* Multiple select
 * Colorpicker
 * Image radio
 * Post/page/custom post type choice (single and multiple)

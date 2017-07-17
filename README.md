@@ -23,7 +23,6 @@ Alchemy Options is an options plugin for Wordpress, simple but powerful. Inspire
 * [Radio buttons](/fields/radio.md)
 * [Select](/fields/select.md)
 * [Checkbox](/fields/checkbox.md)
-* Multiple select
 * Colorpicker
 * Image radio
 * Post/page/custom post type choice (single and multiple)
