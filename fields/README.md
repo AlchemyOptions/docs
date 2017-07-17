@@ -12,7 +12,7 @@
 * [Select](select.md)
 * [Checkbox](checkbox.md)
 * [Colorpicker](colorpicker.md)
-* Image radio
+* [Image radio](image-radio.md)
 * Post/page/custom post type choice (single and multiple)
 * Datalist
 * Repeater

@@ -15,4 +15,5 @@
     * [Select](/fields/select.md)
     * [Checkbox](/fields/checkbox.md)
     * [Colorpicker](/fields/colorpicker.md)
+    * [Image radio](/fields/image-radio.md)
 * [Samples](/Samples.md)
