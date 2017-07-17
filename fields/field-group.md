@@ -1,6 +1,6 @@
 # Field Group
 
-Field group renders fields as a... well... group. Visually it is the same as adding them separately.
+Field group renders fields as a... well... group. Visually it is the same as adding them separately. See a more detailed [description](#description) if the benefits are not clear.
  
 ## Example configuration
 
