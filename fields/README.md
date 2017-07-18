@@ -16,7 +16,7 @@
 * [Post type select (single and multiple)](post-type-select.md)
 * [Datalist](datalist.md)
 * Repeater
-* Button group (with simple condition)
+* [Button group (with simple condition)](button-group.md)
 * [Slider](slider.md)
 * [Taxonomy select (single and multiple)](taxonomy-select.md)
 * [Field group](field-group.md)
