@@ -18,6 +18,7 @@
     * [Image radio](/fields/image-radio.md)
     * [Post type select](/fields/post-type-select.md)
     * [Datalist](/fields/datalist.md)
+    * [Repeater](/fields/repeater.md)
     * [Button group](/fields/button-group.md)
     * [Slider](/fields/slider.md)
     * [Taxonomy select](/fields/taxonomy-select.md)

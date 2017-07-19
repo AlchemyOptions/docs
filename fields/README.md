@@ -15,7 +15,7 @@
 * [Image radio](image-radio.md)
 * [Post type select (single and multiple)](post-type-select.md)
 * [Datalist](datalist.md)
-* Repeater
+* [Repeater](repeater.md)
 * [Button group (with simple condition)](button-group.md)
 * [Slider](slider.md)
 * [Taxonomy select (single and multiple)](taxonomy-select.md)

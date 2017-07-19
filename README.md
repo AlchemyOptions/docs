@@ -4,10 +4,10 @@ Alchemy Options is an options plugin for Wordpress, simple but powerful. Inspire
 
 ## Features
 
-* Multiple WYSIWYG editors (including dynamic creation in a Repeater field)
+* Multiple [WYSIWYG editors](/fields/editor.md) (including dynamic creation in a [Repeater](/fields/repeater.md) field)
 * Multisite compatible with network options stored on the Network admin page
 * [Field groups](/fields/field-group.md)
-* Repeater fields can be nested
+* [Repeater](/fields/repeater.md) fields can be [nested](/fields/repeater.md#nested-repeaters)
 * Dynamic filter for each option
 * Translation ready
 
@@ -28,7 +28,7 @@ Alchemy Options is an options plugin for Wordpress, simple but powerful. Inspire
 * [Image radio](/fields/image-radio.md)
 * [Post type select (single and multiple)](/fields/post-type-select.md)
 * [Datalist](/fields/datalist.md)
-* Repeater
+* [Repeater](/fields/repeater.md)
 * [Button group (with simple condition)](/fields/button-group.md)
 * [Slider](/fields/slider.md)
 * [Taxonomy select (single and multiple)](/fields/taxonomy-select.md)
