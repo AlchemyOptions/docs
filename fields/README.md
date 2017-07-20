@@ -15,6 +15,7 @@
 * [Image radio](image-radio.md)
 * [Post type select (single and multiple)](post-type-select.md)
 * [Datalist](datalist.md)
+* [Sections](sections.md)
 * [Repeater](repeater.md)
 * [Button group (with simple condition)](button-group.md)
 * [Slider](slider.md)
