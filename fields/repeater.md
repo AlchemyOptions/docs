@@ -15,6 +15,8 @@ All repeater signatures should be specified in their own `repeaters` section of 
 
 The fields themselves are added just like any other fields in the `options` part with one exception - the type of the field should be in the following format: `repeater:signatureID`.
 
+Since the [Sections](sections.md) field is primarily for aesthetic grouping, it cannot be used within the Repeater.
+
 Enough talking, let's see some code :)
  
 ## Example configuration
@@ -197,7 +199,7 @@ Note that all 3 different signatures are top level (not nested) but the `fields`
 | Name | Type | Description |
 | --- | --- | --- |
 | `id` | string | Unique ID that will be used in the `type` parameter of the field **(required)**
-| `fields` | array | Array of fields usual configurations. Can have [nested repeater fields](#nested-repeaters). **(required)**
+| `fields` | array | Array of fields usual configurations. Can have [nested repeater fields](#nested-repeaters). Ignores the [Sections](sections.md) field. **(required)**
 
 ## Return value
 

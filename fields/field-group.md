@@ -40,13 +40,15 @@ The `id` field for the fields in a group should not necessarily be unique, in fa
 
 The fields IDs will be the keys of the associative array that is [returned](#return-value) when the value is requested.
 
+Since the [Sections](sections.md) field is primarily for aesthetic grouping, it cannot be used within the Fields Group.
+
 ## Params
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `type` | string | `field-group` **(required)**
 | `id` | string | Unique ID that will be used to retrieve the value **(required)**
-| `fields` | array | Array of fields usual configurations. See a more detailed [description](#description). **(required)**
+| `fields` | array | Array of fields usual configurations. Ignores the [Sections](sections.md) field. See a more detailed [description](#description). **(required)**
 | `tab` | string | Specifies in which tab this option will be rendered
 
 ## Return value

@@ -49,6 +49,8 @@ Unlike other grouping fields, such as [Field Group](field-group.md) or [Repeater
 
 You won't be able to get all values of a section at once, so strictly speaking, the Sections field is more of a wrapper than a field.
 
+For these reasons, the Sections field cannot be used within the [Repeater](repeater.md) and [Field Group](field-group.md).
+
 ## Params
 
 | Name | Type | Description |
