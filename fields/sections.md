@@ -16,7 +16,6 @@ array(
                     'title' => 'My text field title',
                     'id' => 'text-option',
                     'desc' => 'Short description for the field',
-                    'tab' => 'main',
                     'type' => 'text',
                 ),
             ),
@@ -28,7 +27,6 @@ array(
                     'title' => 'My textarea field title',
                     'id' => 'textarea-option',
                     'desc' => 'Short description for the field',
-                    'tab' => 'main',
                     'type' => 'textarea',
                 ),
             ),
@@ -43,7 +41,7 @@ This will produce the following
 
 ## Description
 
-Each section in the `sections` array should have the `title` and the `options` array. The `options` should consist of regular fields configurations.
+Each section in the `sections` array should have the `title` and the `options` array. The `options` should consist of regular fields configurations (you may omit the `tab` key in each option though, since it'll be enough to mark the sections field itself).
 
 Unlike other grouping fields, such as [Field Group](field-group.md) or [Repeater](repeater.md), where the IDs of the fields in groups could be used multiple times, this type requires that all the options were like regular options with unique IDs.
 
