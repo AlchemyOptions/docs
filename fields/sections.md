@@ -6,7 +6,7 @@ Sections field groups the fields into togglable sections. This field type is jus
 
 ```php
 array(
-    'tab' => 'homepage',
+    'tab' => 'main',
     'type' => 'sections',
     'sections' => array(
         array(
