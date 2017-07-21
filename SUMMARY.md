@@ -28,4 +28,5 @@
 * [Functions](/functions/README.md)
     * [alch_options_id](/functions/alch_options_id.md)
     * [alch_network_options_id](/functions/alch_network_options_id.md)
+    * [alch_get_option](/functions/alch_get_option.md)
 * [Samples](/Samples.md)
