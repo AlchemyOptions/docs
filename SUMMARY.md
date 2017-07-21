@@ -7,6 +7,7 @@
     * [Password](/fields/password.md)
     * [URL](/fields/url.md)
     * [Email](/fields/email.md)
+    * [Tel](/fields/tel.md)
     * [Textarea](/fields/textarea.md)
     * [Editor (WYSIWYG)](/fields/editor.md)
     * [Datepicker](/fields/datepicker.md)

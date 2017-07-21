@@ -4,6 +4,7 @@
 * [Password](password.md)
 * [URL](url.md)
 * [Email](email.md)
+* [Tel](tel.md)
 * [Textarea](textarea.md)
 * [Editor (WYSIWYG)](editor.md)
 * [Datepicker](datepicker.md)
