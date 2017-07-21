@@ -29,4 +29,5 @@
     * [alch_options_id](/functions/alch_options_id.md)
     * [alch_network_options_id](/functions/alch_network_options_id.md)
     * [alch_get_option](/functions/alch_get_option.md)
+    * [alch_get_network_option](/functions/alch_get_network_option.md)
 * [Samples](/Samples.md)
