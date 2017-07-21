@@ -25,4 +25,5 @@
     * [Slider](/fields/slider.md)
     * [Taxonomy select](/fields/taxonomy-select.md)
     * [Field group](/fields/field-group.md)
+* [Functions](/fields/README.md)
 * [Samples](/Samples.md)
