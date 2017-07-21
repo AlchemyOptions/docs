@@ -1,4 +1,4 @@
-# alch_options_id
+# alch_get_option
 
 Function `alch_get_option` returns the value of a saved option.
 
