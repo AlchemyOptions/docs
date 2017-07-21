@@ -1,7 +1,7 @@
 {
     "gitbook": "3.2.2",
     "title": "Alchemy Options",
-    "plugins": ["prism", "-highlight", "github", "anchorjs"],
+    "plugins": ["prism", "-highlight", "github", "anchorjs", "ga"],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/AlchemyOptions/AlchemyOptions/"
@@ -13,6 +13,9 @@
         },
         "links": {
             "home": null
+        },
+        "ga": {
+            "token": "UA-102954661-1"
         }
     }
 }
