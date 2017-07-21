@@ -25,5 +25,7 @@
     * [Slider](/fields/slider.md)
     * [Taxonomy select](/fields/taxonomy-select.md)
     * [Field group](/fields/field-group.md)
-* [Functions](/fields/README.md)
+* [Functions](/functions/README.md)
+    * [alch_options_id](/functions/alch_options_id.md)
+    * [alch_network_options_id](/functions/alch_network_options_id.md)
 * [Samples](/Samples.md)
