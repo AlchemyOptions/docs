@@ -33,4 +33,5 @@
     * [alch_delete_value](/functions/alch_delete_value.md)
 * [Filters](/filters/README.md)
     * [alch_options_id](/filters/alch_options_id.md)
+    * [alch_network_options_id](/filters/alch_network_options_id.md)
 * [Samples](/Samples.md)
