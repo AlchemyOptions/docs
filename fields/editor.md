@@ -28,8 +28,8 @@ The field uses [`wp_kses`](https://developer.wordpress.org/reference/functions/w
 
 | Name | Description |
 | --- | --- |
-| `alch_allowed_editor_html_tags` | Can be used to control which HTML tags are allowed.
-| `alch_allowed_editor_protocols` | Can be used to control which protocols are allowed.
+| [`alch_allowed_editor_html_tags`](/filters/alch_allowed_editor_html_tags.md) | Can be used to control which HTML tags are allowed.
+| [`alch_allowed_editor_protocols`](/filters/alch_allowed_editor_protocols.md) | Can be used to control which protocols are allowed.
 
 See the filters page for more details.
 

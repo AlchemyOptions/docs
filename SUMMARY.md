@@ -37,4 +37,5 @@
     * [alch_options_id().'_args'](/filters/alch_options_id_args.md)
     * [alch_network_options_id().'_args'](/filters/alch_network_options_id_args.md)
     * [alch_allowed_editor_html_tags](/filters/alch_allowed_editor_html_tags.md)
+    * [alch_allowed_editor_protocols](/filters/alch_allowed_editor_protocols.md)
 * [Samples](/Samples.md)
