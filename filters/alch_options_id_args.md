@@ -14,5 +14,5 @@ function change_alchemy_options_arguments( $args ) {
     return $args;
 }
 
-add_filter( alch_options_id() . '_args', 'change_alchemy_options_arguments', 10, 1 );
+add_filter( alch_options_id() . '_args', 'change_alchemy_options_arguments' );
 ```

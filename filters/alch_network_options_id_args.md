@@ -14,5 +14,5 @@ function change_alchemy_options_network_arguments( $networkArgs ) {
     return $networkArgs;
 }
 
-add_filter( alch_network_options_id() . '_args', 'change_alchemy_options_network_arguments', 10, 1 );
+add_filter( alch_network_options_id() . '_args', 'change_alchemy_options_network_arguments' );
 ```
