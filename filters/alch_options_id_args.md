@@ -1,6 +1,6 @@
 # alch_options_id() . '_args'
 
-Filter `alch_options_id() . '_args'` can be used to filter the main configuration settings before saving them in the database.
+Dynamic filter `alch_options_id() . '_args'` can be used to filter the main configuration settings before saving them in the database.
 
 ## Example
 
