@@ -1,4 +1,4 @@
-# alch_value_\{ $optionID \}
+# alch\_value\_\{ $optionID \}
 
 Dynamic filter `alch_value_{ $optionID }` is used to filter the value for a given [field](/fields/README.md) before returning it from [`alch_get_option`](/functions/alch_get_option.md). It isn't applied to the `$default` parameter if the field has no value stored.
 
