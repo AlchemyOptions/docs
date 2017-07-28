@@ -1,0 +1,17 @@
+# Javascript functions available in Alchemy Options
+
+Alchemy Options comes with some client-side helpers, available in the global `alchemyOptions` variable. Functions use the wonderful [kew](https://github.com/Medium/kew) library as a light-weight promises polyfill.
+
+Functions have been tested in as early as Internet Explorer 10.
+
+## Howto
+
+A light-weight(10Kb minified, NOT gzipped) script is registered as `alchemy-client-scripts`. Add it as a dependency if you want to use it, like so:
+
+```php
+wp_enqueue_script( 'my-scripts', '/path/to/my-scripts.js', array( 'alchemy-client-scripts' ), '1.0', true );
+```
+
+## Available functions
+
+* [getOption](get_option.md)
