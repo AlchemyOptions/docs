@@ -15,3 +15,4 @@ wp_enqueue_script( 'my-scripts', '/path/to/my-scripts.js', array( 'alchemy-clien
 ## Available functions
 
 * [getOption](get_option.md)
+* [getNetworkOption](get_network_option.md)

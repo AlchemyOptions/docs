@@ -36,6 +36,8 @@ alchemyOptions
     });
 ```
 
+More info can be found in the [kew documentation](https://github.com/Medium/kew#how-do-i-use-kew).
+
 ## Params
 
 | Name | Type | Description |
