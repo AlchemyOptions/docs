@@ -2,6 +2,8 @@
 
 Function `getNetworkOption` is similar to [`getOption`](get_option.md). It allows you to get the saved value of a network option. Uses [kew](https://github.com/Medium/kew) as a promises polyfill.
  
+Enqueue a script and [add `alchemy-options-client-scripts` as its dependency](README.md). This will give you the global `alchemyOptions` variable.
+ 
 ## Example usage
 
 ```javascript
