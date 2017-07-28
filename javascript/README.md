@@ -2,7 +2,7 @@
 
 Alchemy Options comes with some client-side helpers, available in the global `alchemyOptions` variable. Functions use the wonderful [kew](https://github.com/Medium/kew) library as a light-weight promises polyfill.
 
-Functions have been tested in as early as Internet Explorer 10.
+Functions have been tested in Internet Explorer 10 and newer. All modern browsers should do just fine.
 
 ## Howto
 
