@@ -43,4 +43,4 @@ If you feel like this plugin could be extended, or you think you've found a bug 
 
 ## Ready to go?
 
-Please proceed to the Installation instructions or take a look at [configuration object examples](Samples.md) to get you rolling.
+Please proceed to the [installation instructions](Installation.md) or take a look at [configuration object examples](Samples.md) to get you rolling.
