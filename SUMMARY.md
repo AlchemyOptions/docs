@@ -1,6 +1,7 @@
 # Table of Contents
 
 * [Read Me](/README.md)
+* [Installation](/Installation.md)
 * [Configuration](/Configuration.md)
 * [Field types](/fields/README.md)
     * [Text](/fields/text.md)
