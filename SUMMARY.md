@@ -3,6 +3,7 @@
 * [Read Me](/README.md)
 * [Installation](/Installation.md)
 * [Configuration](/Configuration.md)
+* [Samples](/Samples.md)
 * [Field types](/fields/README.md)
     * [Text](/fields/text.md)
     * [Password](/fields/password.md)
@@ -44,4 +45,3 @@
     * [alch_allowed_editor_protocols](/filters/alch_allowed_editor_protocols.md)
     * [alch\_value\_\{ $optionID \}](/filters/alch_value_option_id.md)
     * [alch\_network\_value\_\{ $optionID \}](/filters/alch_network_value_option_id.md)
-* [Samples](/Samples.md)
