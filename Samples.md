@@ -109,9 +109,36 @@ add_action( 'admin_init', 'add_custom_network_options' );
 
 ## With a repeater field in one of two tabs
 
-## With two tabs - Main and Inner
-
 ```php
+function add_custom_repeaters() {
+    if ( ! function_exists( 'alch_repeaters_id' ) || ! is_admin() )
+        return;
+
+    $saved_settings = get_option( alch_repeaters_id(), array() );
+
+    $custom_settings = array(
+        array(
+            'id' => 'my-repeater',
+            'fields' => array(
+                array(
+                    'title' => 'My content title',
+                    'desc' => 'Short description for the field',
+                    'id' => 'content',
+                    'type' => 'editor',
+                ),
+            ),
+        ),
+    );
+
+    $custom_settings = apply_filters( alch_repeaters_id() . '_args', $custom_settings );
+
+    if ( $saved_settings !== $custom_settings ) {
+        update_option( alch_repeaters_id(), $custom_settings );
+    }
+}
+
+add_action( 'admin_init', 'add_custom_repeaters' );
+
 function add_custom_options() {
     if ( ! function_exists( 'alch_options_id' ) || ! is_admin() )
         return;
@@ -136,25 +163,10 @@ function add_custom_options() {
                 'tab' => 'inner',
             ),
         ),
-        'repeaters' => array(
-            array(
-                'id' => 'my-repeater',
-                'fields' => array(
-                    array(
-                        'title' => 'My content title',
-                        'desc' => 'Short description for the field',
-                        'id' => 'content',
-                        'type' => 'editor',
-                    ),
-                ),
-            ),
-        ),
     );
 
-    /* allow settings to be filtered before saving */
     $custom_settings = apply_filters( alch_options_id() . '_args', $custom_settings );
 
-    /* settings are not the same update the DB */
     if ( $saved_settings !== $custom_settings ) {
         update_option( alch_options_id(), $custom_settings );
     }
