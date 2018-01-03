@@ -271,7 +271,7 @@ Kinda nice, huh? :)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `type` | string | `repeater:signatureID`. [Signature ID](#repeater-signatures) should match one from the `repeaters` part of the config. **(required)**
+| `type` | string | `repeater:signatureID`. [Signature ID](#repeater-signatures) should match one from the repeaters config. **(required)**
 | `id` | string | Unique ID that will be used to retrieve the value **(required)**
 | `tab` | string | Specifies in which tab this option will be rendered
 | `title` | string | Shows a heading to the left of the field
