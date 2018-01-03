@@ -9,9 +9,9 @@ Repeater field is one of the most powerful Alchemy Options fields. Alongside the
 * Can [copy items](#copying-a-repeatee).
 * Can repeat items of [different types](#typed-repeaters).
  
-2 things were taken as the key features of a repeater:
+2 things were taken as the pillars of a repeater:
 
-1. [Reusability](#reusing-the-repeaters-signature) of a repeater's signature (both in Options and Meta Boxes)
+1. [Reusability](#reusing-the-repeaters-signature) of a repeater's signature (both in Options and [Meta Boxes](../Meta-boxes.md)
 2. Possibility to [nest repeaters](#nested-repeaters) into one another
 
 Thus a repeater field consists of 2 parts: a) the field itself and b) its signature (like a mould for the field).
