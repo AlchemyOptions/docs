@@ -4,7 +4,7 @@ Function `alch_get_network_option` is similar to [`alch_get_option`](alch_get_op
 
 ## Parameters
 
-The function takes `$optionID` and `$default` as parameters. `$optionID` should match the `id` of some field in the main network [configuration object](Configuration.md).
+The function takes `$optionID` and `$default` as parameters. `$optionID` should match the `id` of some field in the main network [configuration object](../Configuration.md).
 
 ## Return values
 
