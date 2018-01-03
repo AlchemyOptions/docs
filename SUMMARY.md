@@ -3,6 +3,7 @@
 * [Read Me](/README.md)
 * [Installation](/Installation.md)
 * [Configuration](/Configuration.md)
+* [Meta Boxes](/Meta-boxes.md)
 * [Samples](/Samples.md)
 * [Field types](/fields/README.md)
     * [Text](/fields/text.md)
