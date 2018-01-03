@@ -1,25 +1,68 @@
 # Repeater Field
 
-Repeater field is one of the most powerful Alchemy Options fields. Alongside the [Sections](sections.md) and [Field Group](field-group.md) fields it groups fields and allows to [produce arrays of values](#return-value). Can be [sorted by drag-and-drop](#sorting). Can [temporarily remove values](#temporary-hiding) from the front end.
+Repeater field is one of the most powerful Alchemy Options fields. Alongside the [Sections](sections.md) and [Field Group](field-group.md) fields it groups fields and allows to [produce arrays of values](#return-value).
+
+## Features:
+
+* Can be [sorted by drag-and-drop](#sorting).
+* Can [temporarily remove values](#temporary-hiding) from the front end.
+* Can [copy items](#copying-a-repeatee).
+* Can repeat items of [different types](#typed-repeaters).
  
 2 things were taken as the key features of a repeater:
 
-1. [Reusability](#reusing-the-repeaters-signature) of a repeater's signature
+1. [Reusability](#reusing-the-repeaters-signature) of a repeater's signature (both in Options and Meta Boxes)
 2. Possibility to [nest repeaters](#nested-repeaters) into one another
 
 Thus a repeater field consists of 2 parts: a) the field itself and b) its signature (like a mould for the field).
 
 ## Repeater signatures
 
-All repeater signatures should be specified in their own `repeaters` section of the main config. Each signature is an array with [`id` and `fields` keys](#signature-params). Much like the [Field Group](field-group.md) field.
+All repeater signatures should be specified in their own config in the `admin_init` callback. Like so:
 
-The fields themselves are added just like any other fields in the `options` part with one exception - the type of the field should be in the following format: `repeater:signatureID`.
+```php
+function add_careers_repeaters() {
+    if ( ! function_exists( 'alch_repeaters_id' ) || ! is_admin() ) {
+        return;
+    }
+
+    $saved_settings = get_option( alch_repeaters_id(), array() );
+
+    $custom_settings = array(
+        array(
+            'id' => 'repeater-one',
+            'fields' => array(
+                array(
+                    'title' => 'My content title',
+                    'desc' => 'Short description for the field',
+                    'id' => 'description',
+                    'type' => 'editor',
+                ),
+            ),
+        ),
+    );
+
+    $custom_settings = apply_filters( alch_repeaters_id() . '_args', $custom_settings );
+
+    if ( $saved_settings !== $custom_settings ) {
+        update_option( alch_repeaters_id(), $custom_settings );
+    }
+}
+
+add_action( 'admin_init', 'add_careers_repeaters' );
+```
+
+Each signature is an array with [`id` and `fields` keys](#signature-params). Much like the [Field Group](field-group.md) field.
+
+The fields themselves are added just like any other fields in the `options` part of the main config with one exception - the type of the field should be in the following format: `repeater:signatureID`.
 
 Since the [Sections](sections.md) field is primarily for aesthetic grouping, it cannot be used within the Repeater.
 
 Enough talking, let's see some code :)
  
 ## Example configuration
+
+Considering we have the [signatures](#repeater-signatures) as above.
 
 ```php
 ...
@@ -28,21 +71,8 @@ Enough talking, let's see some code :)
         'title' => 'My repeater field title',
         'id' => 'repeater-field',
         'desc' => 'Short description for the field',
-        'type' => 'repeater:my-repeater',
+        'type' => 'repeater:repeater-one',
         'tab' => 'homepage',
-    ),
-),
-'repeaters' => array(
-    array(
-        'id' => 'my-repeater',
-        'fields' => array(
-            array(
-                'title' => 'My content title',
-                'desc' => 'Short description for the field',
-                'id' => 'content',
-                'type' => 'editor',
-            ),
-        ),
     ),
 ),
 ...
@@ -76,9 +106,13 @@ If you hover over or expand a repeatee there's a button group that allows to del
 
 ![](../assets/repeater-five.png)
 
-## Reusing the repeater's signature
+## Copying a repeatee
 
-Since the repeaters' signatures are defined in their own `repeaters` block of the config it allows developers to reuse a repeater's signature to create several repeater fields.
+If you press the Copy button, it'll work as expected and will produce an exact copy of the repeatee below it. If the target repeatee is hidden, the resulted copy will be hidden as well.
+
+## Reusing a repeater's signature
+
+Since repeaters' signatures are defined in their own config it allows developers to reuse a repeater's signature to create several repeater fields.
 
 E.g. the following configuration
 
@@ -100,19 +134,6 @@ E.g. the following configuration
         'tab' => 'homepage',
     ),
 ),
-'repeaters' => array(
-    array(
-        'id' => 'my-repeater',
-        'fields' => array(
-            array(
-                'title' => 'My content title',
-                'desc' => 'Short description for the field',
-                'id' => 'content',
-                'type' => 'editor',
-            ),
-        ),
-    ),
-),
 ...
 ```
 
@@ -124,18 +145,9 @@ will create two separate repeater fields with identical fields using the same si
 
 You can nest repeaters, make sure that the repeaters' signatures are not nested. Here's an example of a repeater inside a repeater inside a repeater (that's right - 3 levels deep)
 
+### Repeaters signatures:
+
 ```php
-...
-'options' => array(
-    array(
-        'title' => 'My repeater field title',
-        'id' => 'repeater-field',
-        'desc' => 'Short description for the field',
-        'type' => 'repeater:my-repeater',
-        'tab' => 'homepage',
-    ),
-),
-'repeaters' => array(
     array(
         'id' => 'my-repeater',
         'fields' => array(
@@ -176,6 +188,20 @@ You can nest repeaters, make sure that the repeaters' signatures are not nested.
             ),
         ),
     ),
+```
+
+### Options:
+
+```php
+...
+'options' => array(
+    array(
+        'title' => 'My repeater field title',
+        'id' => 'repeater-field',
+        'desc' => 'Short description for the field',
+        'type' => 'repeater:my-repeater',
+        'tab' => 'homepage',
+    ),
 ),
 ...
 ```
@@ -183,6 +209,63 @@ You can nest repeaters, make sure that the repeaters' signatures are not nested.
 ![](../assets/repeater-seven.png)
 
 Note that all 3 different signatures are top level (not nested) but the `fields` part reference them. Thus creating the needed nesting.
+
+## Typed repeaters
+
+A repeater field can repeat values of different types. It has a slightly different config signature that has `field-types` instead of `fields` in it. Each `field-type` should have a unique `id`, nice `title` (that will be seen on the front end) and the `fields` key that has regular options settings. E.g.
+
+### Repeaters signatures:
+
+```php
+array(
+    'id' => 'my-repeater',
+    'field-types' => array(
+        array(
+            'id' => 'wysiwyg',
+            'title' => 'Description as a WYSIWYG',
+            'fields' => array(
+                array(
+                    'title' => 'Editor',
+                    'id' => 'editor',
+                    'type' => 'editor',
+                ),
+            ),
+        ),
+        array(
+            'id' => 'textarea',
+            'title' => 'Description as a textarea',
+            'fields' => array(
+                array(
+                    'title' => 'Editor',
+                    'id' => 'editor',
+                    'type' => 'textarea',
+                ),
+            ),
+        ),
+    ),
+),
+```
+
+### Options:
+
+```php
+array(
+    'title' => __( 'My from-type repeater', 'dotmailer' ),
+    'desc' => __( 'Choose which type to add', 'dotmailer' ),
+    'id' => 'from-type-repeater',
+    'type' => 'repeater:my-repeater',
+),
+```
+
+These settings will produce the following:
+
+![](../assets/from-type-repeater-one.png)
+
+Clicking any of the types will produce repeatees of the respective type. Since it's a repeater field you can mix and match repeatees of various types under one option ID.
+
+![](../assets/from-type-repeater-two.png)
+
+Kinda nice, huh? :)
 
 ## Params
 
@@ -194,12 +277,19 @@ Note that all 3 different signatures are top level (not nested) but the `fields`
 | `title` | string | Shows a heading to the left of the field
 | `desc` | string | Shows a description text (can have HTML)
 
-## Signature params
+## Simple signature params
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `id` | string | Unique ID that will be used in the `type` parameter of the field **(required)**
 | `fields` | array | Array of fields usual configurations. Can have [nested repeater fields](#nested-repeaters). Ignores the [Sections](sections.md) field. **(required)**
+
+## Typed repeater signature params
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `id` | string | Unique ID that will be used in the `type` parameter of the field **(required)**
+| `field-types` | array | Configurations for each repeatee type, which is an array consisting of the required `id`, `title` and `fields` keys. See [an example](#typed-repeaters) above. **(required)**
 
 ## Return value
 
@@ -239,3 +329,7 @@ Array
         )
 )
 ```
+
+## Typed repeaters return value
+
+Typed arrays return an array with `type` and `value` fields, `type` is the field type ID you specified in the settings and `value` is a regular repeater return value.

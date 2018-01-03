@@ -65,5 +65,3 @@ $custom_settings = array(
 ```
 
 If there's a need to split options even further, there's a [`sections`](fields/sections.md) type for visual splitting of fields into togglable sections and a [`field-group`](fields/field-group.md) type to group related fields together for an easier [value retrieval](/functions/alch_get_option.md).
-
-In the [Repeater](fields/field-group.md) field the `$custom_settings` array will further be extended to include the [repeaters' signatures](fields/field-group.md#repeater-signatures).
