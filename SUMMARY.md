@@ -1,7 +1,9 @@
 # Table of Contents
 
 * [Read Me](/README.md)
+* [Installation](/Installation.md)
 * [Configuration](/Configuration.md)
+* [Samples](/Samples.md)
 * [Field types](/fields/README.md)
     * [Text](/fields/text.md)
     * [Password](/fields/password.md)
@@ -31,6 +33,9 @@
     * [alch_get_option](/functions/alch_get_option.md)
     * [alch_get_network_option](/functions/alch_get_network_option.md)
     * [alch_delete_value](/functions/alch_delete_value.md)
+* [Javascript](/javascript/README.md)
+    * [getOption](/javascript/get_option.md)
+    * [getNetworkOption](/javascript/get_network_option.md)
 * [Filters](/filters/README.md)
     * [alch_options_id](/filters/alch_options_id.md)
     * [alch_network_options_id](/filters/alch_network_options_id.md)
@@ -38,5 +43,5 @@
     * [alch_network_options_id() . '_args'](/filters/alch_network_options_id_args.md)
     * [alch_allowed_editor_html_tags](/filters/alch_allowed_editor_html_tags.md)
     * [alch_allowed_editor_protocols](/filters/alch_allowed_editor_protocols.md)
-    * [alch_value_{ $optionID }](/filters/alch_value_option_id.md)
-* [Samples](/Samples.md)
+    * [alch\_value\_\{ $optionID \}](/filters/alch_value_option_id.md)
+    * [alch\_network\_value\_\{ $optionID \}](/filters/alch_network_value_option_id.md)

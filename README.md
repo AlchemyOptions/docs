@@ -10,6 +10,7 @@ Alchemy Options is an options plugin for Wordpress, simple but powerful. Inspire
 * [Field groups](/fields/field-group.md) and [Sections](/fields/sections.md)
 * [Repeater](/fields/repeater.md) fields can be [nested](/fields/repeater.md#nested-repeaters) and allows adding repeatees of different types.
 * [Dynamic filter](/filters/alch_value_option_id.md) for each option before returning its value
+* [Client-side helpers](/javascript/README.md)
 * Translation ready
 
 ## Current [field types](/fields/README.md)
@@ -43,4 +44,4 @@ If you feel like this plugin could be extended, or you think you've found a bug 
 
 ## Ready to go?
 
-Please proceed to the Installation instructions or take a look at [configuration object examples](Samples.md) to get you rolling.
+Please proceed to the [installation instructions](Installation.md) or take a look at [configuration object examples](Samples.md) to get you rolling.
