@@ -82,6 +82,8 @@ function add_custom_network_options() {
 
     new Alchemy_Options\Includes\Network_Options( $options );
 }
+
+add_action( 'init', 'add_custom_network_options' );
 ```
 
 ## With a repeater field in one of two tabs
