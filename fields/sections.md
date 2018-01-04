@@ -5,6 +5,7 @@ Sections field groups the fields into togglable sections. This field type is jus
 ## Example configuration
 
 ```php
+...
 array(
     'tab' => 'main',
     'type' => 'sections',
@@ -33,6 +34,7 @@ array(
         ),
     ),
 ),
+...
 ```
 
 This will produce the following

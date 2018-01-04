@@ -18,17 +18,15 @@ Thus a repeater field consists of 2 parts: a) the field itself and b) its signat
 
 ## Repeater signatures
 
-All repeater signatures should be specified in their own config in the `admin_init` callback. Like so:
+All repeater signatures should be specified in their own config in the `init` callback. Like so:
 
 ```php
-function add_careers_repeaters() {
-    if ( ! function_exists( 'alch_repeaters_id' ) || ! is_admin() ) {
+function add_custom_repeaters() {
+    if( ! class_exists( 'Alchemy_Options\Includes\Repeaters' ) ) {
         return;
     }
 
-    $saved_settings = get_option( alch_repeaters_id(), array() );
-
-    $custom_settings = array(
+    $repeaters = array(
         array(
             'id' => 'repeater-one',
             'fields' => array(
@@ -42,14 +40,10 @@ function add_careers_repeaters() {
         ),
     );
 
-    $custom_settings = apply_filters( alch_repeaters_id() . '_args', $custom_settings );
-
-    if ( $saved_settings !== $custom_settings ) {
-        update_option( alch_repeaters_id(), $custom_settings );
-    }
+    new Alchemy_Options\Includes\Repeaters( $repeaters );
 }
 
-add_action( 'admin_init', 'add_careers_repeaters' );
+add_action( 'init', 'add_custom_repeaters' );
 ```
 
 Each signature is an array with [`id` and `fields` keys](#signature-params). Much like the [Field Group](field-group.md) field.
@@ -148,6 +142,7 @@ You can nest repeaters, make sure that the repeaters' signatures are not nested.
 ### Repeaters signatures:
 
 ```php
+...
     array(
         'id' => 'my-repeater',
         'fields' => array(
@@ -188,6 +183,7 @@ You can nest repeaters, make sure that the repeaters' signatures are not nested.
             ),
         ),
     ),
+...
 ```
 
 ### Options:
@@ -217,6 +213,7 @@ A repeater field can repeat values of different types. It has a slightly differe
 ### Repeaters signatures:
 
 ```php
+...
 array(
     'id' => 'my-repeater',
     'field-types' => array(
@@ -244,6 +241,7 @@ array(
         ),
     ),
 ),
+...
 ```
 
 ### Options:

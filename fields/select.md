@@ -24,6 +24,7 @@ This will produce the following
 It will use the option text as the value. If you wish to separate values from option texts use the following syntax for the `choices` key:
 
 ```php
+...
 'choices' => array(
     array(
         'value' => 'First value',
@@ -38,6 +39,7 @@ It will use the option text as the value. If you wish to separate values from op
         'label' => 'Third option',
     ),
 )
+...
 ```
 
 ## `disabled`
@@ -45,6 +47,7 @@ It will use the option text as the value. If you wish to separate values from op
 If `disabled` keys are specified, they'll be respected. E.g:
 
 ```php
+...
 'choices' => array(
     array(
         'value' => 'First value',
@@ -60,6 +63,7 @@ If `disabled` keys are specified, they'll be respected. E.g:
         'disabled' => true,
     ),
 )
+...
 ```
 
 will result in the following
@@ -84,6 +88,7 @@ where `label` will store the text for the `label` attribute and `choices` is an 
 The following configuration
 
 ```php
+...
 'optgroups' => array(
     array(
         'label' => 'Label one',
@@ -123,6 +128,7 @@ The following configuration
         ),
     ),
 ),
+...
 ```
 
 will result in the following

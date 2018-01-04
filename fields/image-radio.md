@@ -39,6 +39,7 @@ This will produce the following
 If `checked` or `disabled` keys are specified, they'll be respected. E.g:
 
 ```php
+...
 'choices' => array(
     array(
         'value' => 'First val',
@@ -55,6 +56,7 @@ If `checked` or `disabled` keys are specified, they'll be respected. E.g:
         'disabled' => true,
     ),
 )
+...
 ```
 
 will result in the following

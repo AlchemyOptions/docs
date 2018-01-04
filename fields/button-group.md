@@ -24,6 +24,7 @@ This will produce the following
 It will use the label text as the value. If you wish to separate values from labels use the following syntax for the `choices` key:
 
 ```php
+...
 'choices' => array(
     array(
         'value' => 'First value',
@@ -38,6 +39,7 @@ It will use the label text as the value. If you wish to separate values from lab
         'label' => 'Third label',
     ),
 )
+...
 ```
 
 ## `checked` and `disabled`
@@ -45,6 +47,7 @@ It will use the label text as the value. If you wish to separate values from lab
 If `checked` or `disabled` keys are specified, they'll be respected. E.g:
 
 ```php
+...
 'choices' => array(
     array(
         'value' => 'First value',
@@ -61,6 +64,7 @@ If `checked` or `disabled` keys are specified, they'll be respected. E.g:
         'disabled' => true,
     ),
 )
+...
 ```
 
 will result in the following

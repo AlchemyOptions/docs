@@ -20,7 +20,7 @@ function add_custom_meta_boxes() {
     }
 }
 
-add_action( 'admin_init', 'add_custom_meta_boxes' );
+add_action( 'init', 'add_custom_meta_boxes' );
 ```
 
 ## Params

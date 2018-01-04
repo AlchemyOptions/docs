@@ -6,12 +6,11 @@ Add this code to your theme's `functions.php`.
 
 ```php
 function add_custom_options() {
-    if ( ! function_exists( 'alch_options_id' ) || ! is_admin() )
+    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) ) {
         return;
+    }
 
-    $saved_settings = get_option( alch_options_id(), array() );
-
-    $custom_settings = array(
+    $options = array(
         'options' => array(
             array(
                 'id' => 'text-option',
@@ -20,28 +19,21 @@ function add_custom_options() {
         ),
     );
 
-    /* allow settings to be filtered before saving */
-    $custom_settings = apply_filters( alch_options_id() . '_args', $custom_settings );
-
-    /* settings are not the same update the DB */
-    if ( $saved_settings !== $custom_settings ) {
-        update_option( alch_options_id(), $custom_settings );
-    }
+    new Alchemy_Options\Includes\Options( $options );
 }
 
-add_action( 'admin_init', 'add_custom_options' );
+add_action( 'init', 'add_custom_options' );
 ```
 
 ## With two tabs - Main and Inner
 
 ```php
 function add_custom_options() {
-    if ( ! function_exists( 'alch_options_id' ) || ! is_admin() )
+    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) ) {
         return;
+    }
 
-    $saved_settings = get_option( alch_options_id(), array() );
-
-    $custom_settings = array(
+    $options = array(
         'tabs' => array(
             'main' => array(
                 'title' => 'Main'
@@ -61,30 +53,23 @@ function add_custom_options() {
         ),
     );
 
-    /* allow settings to be filtered before saving */
-    $custom_settings = apply_filters( alch_options_id() . '_args', $custom_settings );
-
-    /* settings are not the same update the DB */
-    if ( $saved_settings !== $custom_settings ) {
-        update_option( alch_options_id(), $custom_settings );
-    }
+    new Alchemy_Options\Includes\Options( $options );
 }
 
-add_action( 'admin_init', 'add_custom_options' );
+add_action( 'init', 'add_custom_options' );
 ```
 
 ## Network options
 
-The config is almost exactly the same, only you should use `alch_network_options_id` instead of `alch_options_id`. E.g.
+The config is almost exactly the same, only you should use the `Network_Options` class instead of `Options`. E.g.
 
 ```php
 function add_custom_network_options() {
-    if ( ! function_exists( 'alch_network_options_id' ) || ! is_admin() )
+    if( ! class_exists( 'Alchemy_Options\Includes\Network_Options' ) ) {
         return;
+    }
 
-    $saved_settings = get_option( alch_network_options_id(), array() );
-
-    $custom_settings = array(
+    $options = array(
         'options' => array(
             array(
                 'title' => 'My text field title',
@@ -95,28 +80,19 @@ function add_custom_network_options() {
         ),
     );
 
-    /* allow settings to be filtered before saving */
-    $custom_settings = apply_filters( alch_network_options_id() . '_args', $custom_settings );
-
-    /* settings are not the same update the DB */
-    if ( $saved_settings !== $custom_settings ) {
-        update_option( alch_network_options_id(), $custom_settings );
-    }
+    new Alchemy_Options\Includes\Network_Options( $options );
 }
-
-add_action( 'admin_init', 'add_custom_network_options' );
 ```
 
 ## With a repeater field in one of two tabs
 
 ```php
 function add_custom_repeaters() {
-    if ( ! function_exists( 'alch_repeaters_id' ) || ! is_admin() )
+    if( ! class_exists( 'Alchemy_Options\Includes\Repeaters' ) ) {
         return;
+    }
 
-    $saved_settings = get_option( alch_repeaters_id(), array() );
-
-    $custom_settings = array(
+    $repeaters = array(
         array(
             'id' => 'my-repeater',
             'fields' => array(
@@ -130,22 +106,18 @@ function add_custom_repeaters() {
         ),
     );
 
-    $custom_settings = apply_filters( alch_repeaters_id() . '_args', $custom_settings );
-
-    if ( $saved_settings !== $custom_settings ) {
-        update_option( alch_repeaters_id(), $custom_settings );
-    }
+    new Alchemy_Options\Includes\Repeaters( $repeaters );
 }
 
-add_action( 'admin_init', 'add_custom_repeaters' );
+add_action( 'init', 'add_custom_repeaters' );
+
 
 function add_custom_options() {
-    if ( ! function_exists( 'alch_options_id' ) || ! is_admin() )
+    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) ) {
         return;
+    }
 
-    $saved_settings = get_option( alch_options_id(), array() );
-
-    $custom_settings = array(
+    $options = array(
         'tabs' => array(
             'main' => array(
                 'title' => 'Main'
@@ -165,12 +137,8 @@ function add_custom_options() {
         ),
     );
 
-    $custom_settings = apply_filters( alch_options_id() . '_args', $custom_settings );
-
-    if ( $saved_settings !== $custom_settings ) {
-        update_option( alch_options_id(), $custom_settings );
-    }
+    new Alchemy_Options\Includes\Options( $options );
 }
 
-add_action( 'admin_init', 'add_custom_options' );
+add_action( 'init', 'add_custom_options' );
 ```
