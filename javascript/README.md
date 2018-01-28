@@ -16,3 +16,4 @@ wp_enqueue_script( 'my-scripts', '/path/to/my-scripts.js', array( 'alchemy-optio
 
 * [getOption](get_option.md)
 * [getNetworkOption](get_network_option.md)
+* [getPostMeta](get_post_meta.md)

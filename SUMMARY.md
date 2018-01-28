@@ -38,6 +38,7 @@
 * [Javascript](/javascript/README.md)
     * [getOption](/javascript/get_option.md)
     * [getNetworkOption](/javascript/get_network_option.md)
+    * [getPostMeta](/javascript/get_post_meta.md)
 * [Filters](/filters/README.md)
     * [alch_options_id](/filters/alch_options_id.md)
     * [alch_network_options_id](/filters/alch_network_options_id.md)

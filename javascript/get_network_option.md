@@ -40,6 +40,20 @@ alchemyOptions
 
 More info on how to use promises can be found in the [kew documentation](https://github.com/Medium/kew#how-do-i-use-kew).
 
+## Note on passing non-existent ID
+
+Most of the time `getNetworkOption` will be successful, even if you pass non-existent ID to it. Consider the following example:
+
+```javascript
+alchemyOptions
+    .getNetworkOption('some-non-existent-option')
+    .then(value => {
+        // value is a JSON string like {"success":true,"data":""}
+    })
+```
+
+If you pass the option ID that doesn't exist, the call will still be successful, the `data` property will be an empty string.
+
 ## Params
 
 | Name | Type | Description |
