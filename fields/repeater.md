@@ -248,8 +248,8 @@ array(
 
 ```php
 array(
-    'title' => __( 'My from-type repeater', 'dotmailer' ),
-    'desc' => __( 'Choose which type to add', 'dotmailer' ),
+    'title' => 'My from-type repeater',
+    'desc' => 'Choose which type to add',
     'id' => 'from-type-repeater',
     'type' => 'repeater:my-repeater',
 ),
