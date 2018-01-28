@@ -40,7 +40,7 @@ alchemyOptions
 
 More info can be found in the [kew documentation](https://github.com/Medium/kew#how-do-i-use-kew).
 
-## Note on passing non-existent ID
+## Note on passing non-existent IDs
 
 Most of the time `getOption` will be successful, even if you pass non-existent ID to it. Consider the following example:
 

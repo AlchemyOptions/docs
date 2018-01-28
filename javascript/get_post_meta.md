@@ -54,7 +54,7 @@ alchemyOptions
 
 If you pass the ID of a post that doesn't exist, the call will still be successful, the `data` property will be an empty string.
 
-The same thing will happen if you ask non-existent `metaID`.
+The same thing will happen if you ask for non-existent `metaID`.
 
 ## Params
 
