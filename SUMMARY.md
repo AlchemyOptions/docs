@@ -4,6 +4,7 @@
 * [Installation](/Installation.md)
 * [Configuration](/Configuration.md)
 * [Meta Boxes](/Meta-boxes.md)
+* [Theme mode](/Installation.md#using-alchemy-options-in-your-theme)
 * [Samples](/Samples.md)
 * [Field types](/fields/README.md)
     * [Text](/fields/text.md)

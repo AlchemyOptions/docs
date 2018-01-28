@@ -1,6 +1,6 @@
 # Configuration
 
-To use Alchemy Options in your theme, make sure you've [installed](Installation.md) the Alchemy Options plugin. Then add a function to the `init` hook in your `functions.php`. [Sample configuration objects](Samples.md) are available for a quick copy and paste.
+Make sure you've installed Alchemy Options either as a [plugin](Installation.md#using-alchemy-options-as-a-plugin) or as [part of your theme](Installation.md#using-alchemy-options-in-your-theme). Then add a function to the `init` hook in your `functions.php`. [Sample configuration objects](Samples.md) are available for a quick copy and paste.
 
 ```php
 function add_custom_options() {
