@@ -1,6 +1,6 @@
 #  {% raw %}<img src='../assets/alchemy-logo.svg' width="100" height="100" style="vertical-align:bottom; margin-right:30px; position: relative; bottom: -10px;" alt="Alchemy Options logo" />{% endraw %} Alchemy Options
 
-Alchemy Options is an options plugin for Wordpress, simple but powerful. Inspired by [OptionTree](https://wordpress.org/plugins/option-tree/) and [Archetype](https://our.umbraco.org/projects/backoffice-extensions/archetype/).
+Alchemy Options is an options plugin for WordPress, simple but powerful. Inspired by [OptionTree](https://wordpress.org/plugins/option-tree/) and [Archetype](https://our.umbraco.org/projects/backoffice-extensions/archetype/).
 
 ## Features
 
