@@ -4,10 +4,10 @@ Alchemy Options can be used as a plugin and can be included into the theme.
 
 ## Using Alchemy Options as a plugin
 
-1. manually download the [zip file of the plugin](https://github.com/AlchemyOptions/AlchemyOptions/raw/master/dist/alchemy-options.zip)
-2. upload it to the `/wp-content/plugins` folder of your site
-3. unpack the archive
-4. visit the *Plugins* page of your site
+1. download the [zip file of the plugin](https://github.com/AlchemyOptions/AlchemyOptions/raw/master/dist/alchemy-options.zip)
+2. go to the *Add New* plugin page of your WordPress site
+3. click the *Upload Plugin* button which will bring you a file input
+4. choose the zip-file you've downloaded and press *Install Now*
 5. activate Alchemy Options
 
 ## Using Alchemy Options in your theme
