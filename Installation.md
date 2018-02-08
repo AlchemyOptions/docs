@@ -10,6 +10,12 @@ Alchemy Options can be used as a plugin and can be included into the theme.
 4. choose the zip-file you've downloaded and press *Install Now*
 5. activate Alchemy Options
 
+### Installing via WP-CLI
+
+You can install (and activate) Alchemy Options via WP-CLI, like so:
+
+`wp plugin install https://github.com/AlchemyOptions/AlchemyOptions/raw/master/dist/alchemy-options.zip --activate`
+
 ## Using Alchemy Options in your theme
 
 1. manually download the [zip file of the plugin](https://github.com/AlchemyOptions/AlchemyOptions/raw/master/dist/alchemy-options.zip)
