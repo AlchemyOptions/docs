@@ -4,7 +4,7 @@ Alchemy Options fields can be used in [Meta Boxes](https://developer.wordpress.o
 
 ```php
 function add_custom_meta_boxes() {
-    if( ! class_exists( 'Alchemy_Options\Includes\Meta_Box' ) ) {
+    if( ! class_exists( 'Alchemy_Options\Includes\Meta_Boxes' ) ) {
         return;
     }
     
@@ -19,9 +19,7 @@ function add_custom_meta_boxes() {
         ),
     );
 
-    foreach ( $meta_boxes as $meta_box ) {
-        new Alchemy_Options\Includes\Meta_Box( $meta_box );
-    }
+    new Alchemy_Options\Includes\Meta_Boxes( $meta_boxes );
 }
 
 add_action( 'init', 'add_custom_meta_boxes' );
