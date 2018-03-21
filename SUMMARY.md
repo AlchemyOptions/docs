@@ -35,6 +35,7 @@
     * [alch_get_option](/functions/alch_get_option.md)
     * [alch_get_network_option](/functions/alch_get_network_option.md)
     * [alch_delete_value](/functions/alch_delete_value.md)
+    * [alch_get_post_meta](/functions/alch_get_post_meta.md)
 * [Javascript](/javascript/README.md)
     * [getOption](/javascript/get_option.md)
     * [getNetworkOption](/javascript/get_network_option.md)

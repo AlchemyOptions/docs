@@ -4,6 +4,8 @@ Function `getNetworkOption` is similar to [`getOption`](get_option.md). It allow
  
 Enqueue a script and [add `alchemy-options-client-scripts` as its dependency](README.md). This will give you the global `alchemyOptions` variable.
  
+For server-side use [alch_get_network_option](/functions/alch_get_network_option.md).
+ 
 ## Example usage
 
 ```javascript

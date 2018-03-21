@@ -2,6 +2,8 @@
 
 Function `getOption` allows you to get the saved value of an option. Uses [kew](https://github.com/Medium/kew) as a promises polyfill.
  
+For server-side use [alch_get_option](/functions/alch_get_option.md).
+
 Enqueue a script and [add `alchemy-options-client-scripts` as its dependency](README.md). This will give you the global `alchemyOptions` variable.
  
 ## Example usage

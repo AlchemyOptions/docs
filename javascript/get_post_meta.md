@@ -1,6 +1,8 @@
 # getPostMeta
 
 Function `getPostMeta` allows you to get the saved post meta value by passing `postID` and `metaID` parameters. Uses [kew](https://github.com/Medium/kew) as a promises polyfill.
+
+For server-side use [alch_get_post_meta](/functions/alch_get_post_meta.md).
  
 Enqueue a script and [add `alchemy-options-client-scripts` as its dependency](README.md). This will give you the global `alchemyOptions` variable.
  

@@ -2,6 +2,8 @@
 
 Function `alch_get_option` returns the value of a saved option.
 
+For client-side use [getOption](/javascript/get_option.md).
+
 ## Parameters
 
 The function takes `$optionID` and `$default` as parameters. `$optionID` should match the `id` of some field in the main [configuration object](../Configuration.md).

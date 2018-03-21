@@ -5,3 +5,4 @@
 * [alch_get_option](alch_get_option.md)
 * [alch_get_network_option](alch_get_network_option.md)
 * [alch_delete_value](alch_delete_value.md)
+* [alch_get_post_meta](alch_get_post_meta.md)

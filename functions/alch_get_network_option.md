@@ -2,6 +2,8 @@
 
 Function `alch_get_network_option` is similar to [`alch_get_option`](alch_get_option.md). It returns the value of a saved network option.
 
+For client-side use [getNetworkOption](/javascript/get_network_option.md).
+
 ## Parameters
 
 The function takes `$optionID` and `$default` as parameters. `$optionID` should match the `id` of some field in the main network [configuration object](../Configuration.md).
