@@ -4,7 +4,7 @@ Make sure you've installed Alchemy Options either as a [plugin](Installation.md#
 
 ```php
 function add_custom_options() {
-    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) ) {
+    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) || wp_doing_ajax() ) {
         return;
     }
 

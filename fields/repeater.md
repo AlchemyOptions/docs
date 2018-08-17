@@ -22,7 +22,7 @@ All repeater signatures should be specified in their own config in the `init` ca
 
 ```php
 function add_custom_repeaters() {
-    if( ! class_exists( 'Alchemy_Options\Includes\Repeaters' ) ) {
+    if( ! class_exists( 'Alchemy_Options\Includes\Repeaters' ) || wp_doing_ajax() ) {
         return;
     }
 

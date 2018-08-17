@@ -6,7 +6,7 @@ Add this code to your theme's `functions.php`.
 
 ```php
 function add_custom_options() {
-    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) ) {
+    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) || wp_doing_ajax() ) {
         return;
     }
 
@@ -29,7 +29,7 @@ add_action( 'init', 'add_custom_options' );
 
 ```php
 function add_custom_options() {
-    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) ) {
+    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) || wp_doing_ajax() ) {
         return;
     }
 
@@ -65,7 +65,7 @@ The config is almost exactly the same, only you should use the `Network_Options`
 
 ```php
 function add_custom_network_options() {
-    if( ! class_exists( 'Alchemy_Options\Includes\Network_Options' ) ) {
+    if( ! class_exists( 'Alchemy_Options\Includes\Network_Options' ) || wp_doing_ajax() ) {
         return;
     }
 
@@ -90,7 +90,7 @@ add_action( 'init', 'add_custom_network_options' );
 
 ```php
 function add_custom_repeaters() {
-    if( ! class_exists( 'Alchemy_Options\Includes\Repeaters' ) ) {
+    if( ! class_exists( 'Alchemy_Options\Includes\Repeaters' ) || wp_doing_ajax() ) {
         return;
     }
 
@@ -115,7 +115,7 @@ add_action( 'init', 'add_custom_repeaters' );
 
 
 function add_custom_options() {
-    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) ) {
+    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) || wp_doing_ajax() ) {
         return;
     }
 
