@@ -8,7 +8,7 @@ Dynamic filter `alch_network_options_id() . '_args'` is similar to [`alch_option
 //somewhere in functions.php
 
 function change_alchemy_options_network_arguments( $networkArgs ) {
-    // do something useful with the `$networkArgs`, it will contain all of the info about `tabs`, `repeaters` and `options` that will be used to create the Alchemy Network Options page
+    // do something useful with the `$networkArgs`, it will contain all of the info about `tabs` and `options` that will be used to create the Alchemy Network Options page
     
     // do not forget to pass them further
     return $networkArgs;
