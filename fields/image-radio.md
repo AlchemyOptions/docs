@@ -11,7 +11,7 @@ array(
     'id' => 'image-radio-option',
     'desc' => 'Short description for the field',
     'tab' => 'main',
-    'type' => 'radio',
+    'type' => 'image-radio',
     'choices' => array(
         array(
             'value' => 'First val',
