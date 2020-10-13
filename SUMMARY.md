@@ -4,7 +4,6 @@
 * [Installation](installation.md)
 * [Configuration](configuration.md)
 * [Meta Boxes](meta-boxes.md)
-* [Theme mode](theme-mode.md)
 * [Samples](samples.md)
 * [Field types](fields/README.md)
   * [Text](fields/text.md)
