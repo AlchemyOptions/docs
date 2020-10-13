@@ -1,6 +1,6 @@
-# alch_allowed_editor_html_tags
+# alch\_allowed\_editor\_html\_tags
 
-Filter `alch_allowed_editor_html_tags` can be used to change the default HTML tags that are allowed in the [Editor](/fields/editor.md) field, which uses the `global $allowedposttags;` as a default value.
+Filter `alch_allowed_editor_html_tags` can be used to change the default HTML tags that are allowed in the [Editor](../fields/editor.md) field, which uses the `global $allowedposttags;` as a default value.
 
 Consider taking a look at `[wordpress directory]/wp-includes/kses.php` to see what `$allowedposttags` really is.
 
@@ -30,10 +30,11 @@ Or you can take the passed `$tags` argument and correct it to your needs. Say we
 ```php
 function change_alchemy_options_editor_html_tags( $tags ) {
     $tags['h1'] = array(); // no attributes for the `h1` tag will be allowed
-    
+
     // do not forget to pass them further
     return $tags;
 }
 
 add_filter( 'alch_allowed_editor_html_tags', 'change_alchemy_options_editor_html_tags' );
 ```
+

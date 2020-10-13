@@ -1,4 +1,4 @@
-# Field Types
+# Field types
 
 * [Text](text.md)
 * [Password](password.md)
@@ -6,7 +6,7 @@
 * [Email](email.md)
 * [Tel](tel.md)
 * [Textarea](textarea.md)
-* [Editor (WYSIWYG)](editor.md)
+* [Editor \(WYSIWYG\)](editor.md)
 * [Datepicker](datepicker.md)
 * [Image upload](upload.md)
 * [Radio buttons](radio.md)
@@ -14,11 +14,12 @@
 * [Checkbox](checkbox.md)
 * [Colorpicker](colorpicker.md)
 * [Image radio](image-radio.md)
-* [Post type select (single and multiple)](post-type-select.md)
+* [Post type select \(single and multiple\)](post-type-select.md)
 * [Datalist](datalist.md)
 * [Sections](sections.md)
 * [Repeater](repeater.md)
-* [Button group (with simple condition)](button-group.md)
+* [Button group \(with simple condition\)](button-group.md)
 * [Slider](slider.md)
-* [Taxonomy select (single and multiple)](taxonomy-select.md)
+* [Taxonomy select \(single and multiple\)](taxonomy-select.md)
 * [Field group](field-group.md)
+

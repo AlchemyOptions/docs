@@ -1,6 +1,6 @@
 # Configuration
 
-Make sure you've installed Alchemy Options either as a [plugin](Installation.md#using-alchemy-options-as-a-plugin) or as [part of your theme](Installation.md#using-alchemy-options-in-your-theme). Then add a function to the `init` hook in your `functions.php`. [Sample configuration objects](Samples.md) are available for a quick copy and paste.
+Make sure you've installed Alchemy Options either as a [plugin](installation.md#using-alchemy-options-as-a-plugin) or as [part of your theme](installation.md#using-alchemy-options-in-your-theme). Then add a function to the `init` hook in your `functions.php`. [Sample configuration objects](samples.md) are available for a quick copy and paste.
 
 ```php
 function add_custom_options() {
@@ -20,7 +20,7 @@ function add_custom_options() {
 add_action( 'init', 'add_custom_options' );
 ```
 
-That's it, just add [some options](fields/README.md) instead of `/* options will go here */` and see them appear on the Alchemy Options page.
+That's it, just add [some options](fields/) instead of `/* options will go here */` and see them appear on the Alchemy Options page.
 
 ## Grouping
 
@@ -61,4 +61,5 @@ $options = array(
 ...
 ```
 
-If there's a need to split options even further, there's a [`sections`](fields/sections.md) type for visual splitting of fields into togglable sections and a [`field-group`](fields/field-group.md) type to group related fields together for an easier [value retrieval](/functions/alch_get_option.md).
+If there's a need to split options even further, there's a [`sections`](fields/sections.md) type for visual splitting of fields into togglable sections and a [`field-group`](fields/field-group.md) type to group related fields together for an easier [value retrieval](functions/alch_get_option.md).
+

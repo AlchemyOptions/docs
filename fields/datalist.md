@@ -1,7 +1,7 @@
-# Datalist Field
+# Datalist
 
-Datalist field renders a searchable [Select 2](https://select2.github.io/) field. Handy when the number of options is rather big (e.g. A list of countries in a regular [Select field](select.md) may arguably not be a good UX). Supports [multiple choice](#multiple-choice).
- 
+Datalist field renders a searchable [Select 2](https://select2.github.io/) field. Handy when the number of options is rather big \(e.g. A list of countries in a regular [Select field](select.md) may arguably not be a good UX\). Supports [multiple choice](datalist.md#multiple-choice).
+
 ## Example configuration
 
 ```php
@@ -32,11 +32,11 @@ array(
 
 This will produce the following
 
-![](../assets/datalist-one.png)
+![](../.gitbook/assets/datalist-one.png)
 
 ## Multiple choice
 
-if `'multiple' => true` is added to the [configuration object](#example-configuration), the field will respect it. The following configuration
+if `'multiple' => true` is added to the [configuration object](datalist.md#example-configuration), the field will respect it. The following configuration
 
 ```php
 ...
@@ -67,16 +67,17 @@ array(
 
 will result in the following
 
-![](../assets/datalist-two.png)
+![](../.gitbook/assets/datalist-two.png)
 
 ## Params
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `type` | string | `datalist` **(required)**
-| `id` | string | Unique ID that will be used to retrieve the value **(required)**
-| `tab` | string | Specifies in which tab this option will be rendered
-| `title` | string | Shows a heading to the left of the field
-| `desc` | string | Shows a description text (can have HTML)
-| `multiple` | boolean | Set to `true` if multiple values are needed. See [an example](#multiple-choice) above.
-| `options` | array | Array of arrays with `value` and `name` keys. See [examples](#example-configuration) above.
+| :--- | :--- | :--- |
+| `type` | string | `datalist` **\(required\)** |
+| `id` | string | Unique ID that will be used to retrieve the value **\(required\)** |
+| `tab` | string | Specifies in which tab this option will be rendered |
+| `title` | string | Shows a heading to the left of the field |
+| `desc` | string | Shows a description text \(can have HTML\) |
+| `multiple` | boolean | Set to `true` if multiple values are needed. See [an example](datalist.md#multiple-choice) above. |
+| `options` | array | Array of arrays with `value` and `name` keys. See [examples](datalist.md#example-configuration) above. |
+

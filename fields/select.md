@@ -1,7 +1,7 @@
-# Select Field
+# Select
 
-Select field renders a native select element. Supports [`optgroups`](#optgroups) and [`disabled` attributes](#disabled).
- 
+Select field renders a native select element. Supports [`optgroups`](select.md#optgroups) and [`disabled` attributes](select.md#disabled).
+
 ## Example configuration
 
 ```php
@@ -19,7 +19,7 @@ array(
 
 This will produce the following
 
-![](../assets/select-one.png)
+![](../.gitbook/assets/select-one.png)
 
 It will use the option text as the value. If you wish to separate values from option texts use the following syntax for the `choices` key:
 
@@ -68,7 +68,7 @@ If `disabled` keys are specified, they'll be respected. E.g:
 
 will result in the following
 
-![](../assets/select-two.png)
+![](../.gitbook/assets/select-two.png)
 
 Notice that the third option is not selectable.
 
@@ -133,18 +133,19 @@ The following configuration
 
 will result in the following
 
-![](../assets/select-three.png)
+![](../.gitbook/assets/select-three.png)
 
 Note that the whole second `optgroup` is disabled because the `disabled` key is specified for the `optgoup` itself, not like individual `disabled` keys in groups 1 and 3.
 
 ## Params
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `type` | string | `select` **(required)**
-| `id` | string | Unique ID that will be used to retrieve the value **(required)**
-| `tab` | string | Specifies in which tab this option will be rendered
-| `title` | string | Shows a heading to the left of the field
-| `desc` | string | Shows a description text (can have HTML)
-| `choices` | array | Can be an array of strings or an array of arrays with `value` and `label` keys. See [examples](#example-configuration) above.
-| `optgroups` | array | Array of arrays with `label` and `choices` keys. See [`optgroups`](#optgroups) above.
+| :--- | :--- | :--- |
+| `type` | string | `select` **\(required\)** |
+| `id` | string | Unique ID that will be used to retrieve the value **\(required\)** |
+| `tab` | string | Specifies in which tab this option will be rendered |
+| `title` | string | Shows a heading to the left of the field |
+| `desc` | string | Shows a description text \(can have HTML\) |
+| `choices` | array | Can be an array of strings or an array of arrays with `value` and `label` keys. See [examples](select.md#example-configuration) above. |
+| `optgroups` | array | Array of arrays with `label` and `choices` keys. See [`optgroups`](select.md#optgroups) above. |
+

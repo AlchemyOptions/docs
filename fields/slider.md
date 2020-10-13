@@ -1,4 +1,4 @@
-# Slider Field
+# Slider
 
 Slider field renders a standard [jQuery UI Slider](https://jqueryui.com/slider/) with a readonly input.
 
@@ -23,11 +23,11 @@ array(
 
 This will produce the following
 
-![](../assets/slider.png)
+![](../.gitbook/assets/slider.png)
 
 ## Default values
 
-The `values` key specifies 3 parameters: `min`, `max` and `step`. If any (or all) keys are missing, but the `values` key is provided, they will default to the following
+The `values` key specifies 3 parameters: `min`, `max` and `step`. If any \(or all\) keys are missing, but the `values` key is provided, they will default to the following
 
 ```php
 ...
@@ -42,10 +42,11 @@ The `values` key specifies 3 parameters: `min`, `max` and `step`. If any (or all
 ## Params
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `type` | string | `slider` **(required)**
-| `id` | string | Unique ID that will be used to retrieve the value **(required)**
-| `values` | array | Array containing `min`, `max` and `step` keys. See [default values](#default-values) above for more. **(required)**
-| `tab` | string | Specifies in which tab this option will be rendered
-| `title` | string | Shows a heading to the left of the field
-| `desc` | string | Shows a description text (can have HTML)
+| :--- | :--- | :--- |
+| `type` | string | `slider` **\(required\)** |
+| `id` | string | Unique ID that will be used to retrieve the value **\(required\)** |
+| `values` | array | Array containing `min`, `max` and `step` keys. See [default values](slider.md#default-values) above for more. **\(required\)** |
+| `tab` | string | Specifies in which tab this option will be rendered |
+| `title` | string | Shows a heading to the left of the field |
+| `desc` | string | Shows a description text \(can have HTML\) |
+

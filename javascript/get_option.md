@@ -1,11 +1,11 @@
 # getOption
 
 Function `getOption` allows you to get the saved value of an option. Uses [kew](https://github.com/Medium/kew) as a promises polyfill.
- 
-For server-side use [alch_get_option](/functions/alch_get_option.md).
 
-Enqueue a script and [add `alchemy-options-client-scripts` as its dependency](README.md). This will give you the global `alchemyOptions` variable.
- 
+For server-side use [alch\_get\_option](../functions/alch_get_option.md).
+
+Enqueue a script and [add `alchemy-options-client-scripts` as its dependency](./). This will give you the global `alchemyOptions` variable.
+
 ## Example usage
 
 ```javascript
@@ -59,5 +59,6 @@ If you pass the option ID that doesn't exist, the call will still be successful,
 ## Params
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `id` | string | Unique ID that will be used to retrieve the value **(required)**
+| :--- | :--- | :--- |
+| `id` | string | Unique ID that will be used to retrieve the value **\(required\)** |
+

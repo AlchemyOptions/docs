@@ -1,7 +1,7 @@
-# Tel Field
+# Tel
 
 Tel field renders a text input. Uses the native `input[type="tel"]`.
- 
+
 ## Example configuration
 
 ```php
@@ -18,14 +18,15 @@ array(
 
 This will produce the following
 
-![](../assets/tel.png)
+![](../.gitbook/assets/tel.png)
 
 ## Params
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `type` | string | `tel` **(required)**
-| `id` | string | Unique ID that will be used to retrieve the value **(required)**
-| `tab` | string | Specifies in which tab this option will be rendered
-| `title` | string | Shows a heading to the left of the field
-| `desc` | string | Shows a description text (can have HTML)
+| :--- | :--- | :--- |
+| `type` | string | `tel` **\(required\)** |
+| `id` | string | Unique ID that will be used to retrieve the value **\(required\)** |
+| `tab` | string | Specifies in which tab this option will be rendered |
+| `title` | string | Shows a heading to the left of the field |
+| `desc` | string | Shows a description text \(can have HTML\) |
+

@@ -1,7 +1,7 @@
-# Checkbox Field
+# Checkbox
 
-Checkbox field renders a set of native labeled checkboxes. Supports initial [`checked` or `disabled` attributes](#checked-and-disabled).
- 
+Checkbox field renders a set of native labeled checkboxes. Supports initial [`checked` or `disabled` attributes](checkbox.md#checked-and-disabled).
+
 ## Example configuration
 
 ```php
@@ -19,7 +19,7 @@ array(
 
 This will produce the following
 
-![](../assets/checkbox-one.png)
+![](../.gitbook/assets/checkbox-one.png)
 
 It will use the label text as the value. If you wish to separate values from labels use the following syntax for the `choices` key:
 
@@ -69,17 +69,18 @@ If `checked` or `disabled` keys are specified, they'll be respected. E.g:
 
 will result in the following
 
-![](../assets/checkbox-two.png)
+![](../.gitbook/assets/checkbox-two.png)
 
 Notice that the second option is checked on initial page load and the third option is not checkable.
 
 ## Params
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `type` | string | `checkbox` **(required)**
-| `id` | string | Unique ID that will be used to retrieve the value **(required)**
-| `tab` | string | Specifies in which tab this option will be rendered
-| `title` | string | Shows a heading to the left of the field
-| `desc` | string | Shows a description text (can have HTML)
-| `choices` | array | Kind of required, but will not render anything if no choices are provided. Can be an array of strings or an array of arrays with `value` and `label` keys. See [examples](#example-configuration) above.
+| :--- | :--- | :--- |
+| `type` | string | `checkbox` **\(required\)** |
+| `id` | string | Unique ID that will be used to retrieve the value **\(required\)** |
+| `tab` | string | Specifies in which tab this option will be rendered |
+| `title` | string | Shows a heading to the left of the field |
+| `desc` | string | Shows a description text \(can have HTML\) |
+| `choices` | array | Kind of required, but will not render anything if no choices are provided. Can be an array of strings or an array of arrays with `value` and `label` keys. See [examples](checkbox.md#example-configuration) above. |
+

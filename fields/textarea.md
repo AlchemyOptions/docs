@@ -1,7 +1,7 @@
-# Textarea Field
+# Textarea
 
 Textarea field renders a textarea.
- 
+
 ## Example configuration
 
 ```php
@@ -18,14 +18,15 @@ array(
 
 This will produce the following
 
-![](../assets/textarea.png)
+![](../.gitbook/assets/textarea.png)
 
 ## Params
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `type` | string | `textarea` **(required)**
-| `id` | string | Unique ID that will be used to retrieve the value **(required)**
-| `tab` | string | Specifies in which tab this option will be rendered.
-| `title` | string | Shows a heading to the left of the field
-| `desc` | string | Shows a description text (can have HTML)
+| :--- | :--- | :--- |
+| `type` | string | `textarea` **\(required\)** |
+| `id` | string | Unique ID that will be used to retrieve the value **\(required\)** |
+| `tab` | string | Specifies in which tab this option will be rendered. |
+| `title` | string | Shows a heading to the left of the field |
+| `desc` | string | Shows a description text \(can have HTML\) |
+

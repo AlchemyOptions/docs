@@ -1,4 +1,4 @@
-# Configuration object examples
+# Samples
 
 Add this code to your theme's `functions.php`.
 
@@ -144,3 +144,4 @@ function add_custom_options() {
 
 add_action( 'init', 'add_custom_options' );
 ```
+
