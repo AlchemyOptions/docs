@@ -1,7 +1,7 @@
-# Image Radio Field
+# Image radio
 
-Image radio field renders a set of radio buttons with images as labels. Supports initial [`checked` or `disabled` attributes](#checked-and-disabled).
- 
+Image radio field renders a set of radio buttons with images as labels. Supports initial [`checked` or `disabled` attributes](image-radio.md#checked-and-disabled).
+
 ## Example configuration
 
 ```php
@@ -32,7 +32,7 @@ array(
 
 This will produce the following
 
-![](../assets/image-radio-one.png)
+![](../.gitbook/assets/image-radio-one.png)
 
 ## `checked` and `disabled`
 
@@ -61,17 +61,18 @@ If `checked` or `disabled` keys are specified, they'll be respected. E.g:
 
 will result in the following
 
-![](../assets/image-radio-two.png)
+![](../.gitbook/assets/image-radio-two.png)
 
 Notice that the second option is checked on initial page load and the third option is not checkable.
 
 ## Params
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `type` | string | `radio` **(required)**
-| `id` | string | Unique ID that will be used to retrieve the value **(required)**
-| `tab` | string | Specifies in which tab this option will be rendered
-| `title` | string | Shows a heading to the left of the field
-| `desc` | string | Shows a description text (can have HTML)
-| `choices` | array | Kind of required, but will not render anything if no choices are provided. Must be an array of arrays with `value` and `image` keys. See [examples](#example-configuration) above.
+| :--- | :--- | :--- |
+| `type` | string | `radio` **\(required\)** |
+| `id` | string | Unique ID that will be used to retrieve the value **\(required\)** |
+| `tab` | string | Specifies in which tab this option will be rendered |
+| `title` | string | Shows a heading to the left of the field |
+| `desc` | string | Shows a description text \(can have HTML\) |
+| `choices` | array | Kind of required, but will not render anything if no choices are provided. Must be an array of arrays with `value` and `image` keys. See [examples](image-radio.md#example-configuration) above. |
+

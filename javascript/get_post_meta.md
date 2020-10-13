@@ -2,10 +2,10 @@
 
 Function `getPostMeta` allows you to get the saved post meta value by passing `postID` and `metaID` parameters. Uses [kew](https://github.com/Medium/kew) as a promises polyfill.
 
-For server-side use [alch_get_post_meta](/functions/alch_get_post_meta.md).
- 
-Enqueue a script and [add `alchemy-options-client-scripts` as its dependency](README.md). This will give you the global `alchemyOptions` variable.
- 
+For server-side use [alch\_get\_post\_meta](../functions/alch_get_post_meta.md).
+
+Enqueue a script and [add `alchemy-options-client-scripts` as its dependency](./). This will give you the global `alchemyOptions` variable.
+
 ## Example usage
 
 ```javascript
@@ -42,7 +42,7 @@ alchemyOptions
 
 More info can be found in the [kew documentation](https://github.com/Medium/kew#how-do-i-use-kew).
 
-## Note on passing non-existent IDs 
+## Note on passing non-existent IDs
 
 Most of the time `getPostMeta` will be successful, even if you pass non-existent IDs to it. Consider the following example:
 
@@ -61,6 +61,7 @@ The same thing will happen if you ask for non-existent `metaID`.
 ## Params
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `postID` | number | Post ID to query for the meta **(required)**
-| `metaID` | string | Post meta ID **(required)**
+| :--- | :--- | :--- |
+| `postID` | number | Post ID to query for the meta **\(required\)** |
+| `metaID` | string | Post meta ID **\(required\)** |
+

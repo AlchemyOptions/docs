@@ -1,4 +1,4 @@
-# alch_options_id
+# alch\_options\_id
 
 Filter `alch_options_id` can be used to change the default configuration option name, which is `alchemy_options`.
 
@@ -14,4 +14,5 @@ function change_default_alchemy_options_option() {
 add_filter( 'alch_options_id', 'change_default_alchemy_options_option' );
 ```
 
-Thus, the Alchemy Options will get the new ID when it calls the [`alch_options_id` function](/functions/alch_options_id.md).
+Thus, the Alchemy Options will get the new ID when it calls the [`alch_options_id` function](../functions/alch_options_id.md).
+
