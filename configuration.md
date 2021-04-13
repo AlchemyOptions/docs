@@ -1,26 +1,111 @@
 # Configuration
 
-Make sure you've installed Alchemy Options either as a [plugin](installation.md#using-alchemy-options-as-a-plugin) or as [part of your theme](installation.md#using-alchemy-options-in-your-theme). Then add a function to the `init` hook in your `functions.php`. [Sample configuration objects](samples.md) are available for a quick copy and paste.
+Make sure you have Alchemy Options [installed](installation.md#using-alchemy-options-as-a-plugin).
+
+## Creating option pages
+
+To create an Alchemy Options option page use the `alch_options_pages` hook:
 
 ```php
-function add_custom_options() {
-    if( ! class_exists( 'Alchemy_Options\Includes\Options' ) || wp_doing_ajax() ) {
-        return;
-    }
-
-    $options = array(
-        'options' => array(
-            /* options will go here */
-        ),
+function add_custom_options_pages( $pages ) {
+    $myPages = array(
+        array(
+            'id' => 'my-options-page',
+            'name' => 'My options page',
+        )
     );
 
-    new Alchemy_Options\Includes\Options( $options );
+    return array_merge( $pages, $myPages );
 }
 
-add_action( 'init', 'add_custom_options' );
+add_filter( 'alch_options_pages', 'add_custom_options_pages' );
 ```
 
-That's it, just add [some options](fields/) instead of `/* options will go here */` and see them appear on the Alchemy Options page.
+This will add an options page to the WordPress sidebar.
+
+![](.gitbook/assets/options-page-in-sidebar.png)
+
+By default, top-level pages are added after the Appearance section, but you can filter the page position, capabilities and icon via respective hooks.
+
+## Creating option pages with subpages
+
+An Alchemy Options option page can have subpages, you can specify them in the `subpages` array like so:
+
+```php
+function add_custom_options_pages( $pages ) {
+    $myPages = array(
+        array(
+            'id' => 'my-options-page',
+            'name' => 'My options page',
+            'subpages' => array(
+                array(
+                    'id' => 'my-options-subpage',
+                    'name' => 'My options subpage',
+                ),
+            ),
+        )
+    );
+
+    return array_merge( $pages, $myPages );
+}
+
+add_filter( 'alch_options_pages', 'add_custom_options_pages' );
+```
+
+This adds an options page with a subpage to the WordPress sidebar.
+
+![](.gitbook/assets/options-subpage-in-sidebar.png)
+
+By default, the top-level page gets duplicated as a subpage producing 2 identical page titles. You can modify them like so:
+
+```php
+function add_custom_options_pages( $pages ) {
+    $myPages = array(
+        array(
+            'id' => 'my-options-page',
+            'name' => 'My options page',
+            'subpages' => array(
+                array(
+                    'id' => 'my-options-page',
+                    'name' => 'General',
+                ),
+                array(
+                    'id' => 'my-options-subpage',
+                    'name' => 'My options subpage',
+                ),
+            ),
+        )
+    );
+
+    return array_merge( $pages, $myPages );
+}
+
+add_filter( 'alch_options_pages', 'add_custom_options_pages' );
+```
+
+This will produce nicer page names without title duplication.
+
+![](.gitbook/assets/options-page-with-custom-subpage-name-in-sidebar.png)
+
+Notice that in order for it to work the top-level and subpage `id`s should be the same.
+
+## Adding options to option pages
+
+To add options to Alchemy Options option pages use the `alch_options` hook:
+
+```php
+function add_custom_options( $options ) {
+    $myOptions = array(
+        /* options will go here */
+    );
+
+    return array_merge( $options, $myOptions );
+}
+
+add_filter( 'alch_options', 'add_custom_options' );
+```
+
+That's it, just add [some options](fields/) instead of `/* options will go here */` and see them appear on the page.
 
 ## Grouping
 
@@ -62,4 +147,3 @@ $options = array(
 ```
 
 If there's a need to split options even further, there's a [`sections`](fields/sections.md) type for visual splitting of fields into togglable sections and a [`field-group`](fields/field-group.md) type to group related fields together for an easier [value retrieval](functions/alch_get_option.md).
-
