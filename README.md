@@ -1,5 +1,3 @@
-#  {% raw %}<img src='../.gitbook/assets/alchemy-logo.svg' width="100" height="100" style="vertical-align:bottom; margin-right:30px; position: relative; bottom: -10px;" alt="Alchemy Options logo" />{% endraw %} Alchemy Options
-
 Alchemy Options is an options plugin for WordPress, simple but powerful. Inspired by [OptionTree](https://wordpress.org/plugins/option-tree/) and [Archetype](https://our.umbraco.org/projects/backoffice-extensions/archetype/).
 
 ## Features
@@ -21,20 +19,23 @@ Alchemy Options is an options plugin for WordPress, simple but powerful. Inspire
 * [Email](fields/email.md)
 * [Tel](fields/tel.md)
 * [Textarea](fields/textarea.md)
+* [Textblock](fields/textblock.md)
 * [Editor \(WYSIWYG\)](fields/editor.md)
 * [Datepicker](fields/datepicker.md)
-* [Image upload](fields/upload.md)
-* [Radio buttons](fields/radio.md)
+* [Upload](fields/upload.md)
+* [Radio](fields/radio.md)
 * [Select](fields/select.md)
 * [Checkbox](fields/checkbox.md)
+* [Checkbox image](fields/image-radio.md)
 * [Colorpicker](fields/colorpicker.md)
 * [Image radio](fields/image-radio.md)
 * [Post type select \(single and multiple\)](fields/post-type-select.md)
 * [Datalist](fields/datalist.md)
 * [Sections](fields/sections.md)
 * [Repeater](fields/repeater.md)
-* [Button group \(with simple condition\)](fields/button-group.md)
+* [Button group](fields/button-group.md)
 * [Slider](fields/slider.md)
+* [Tokens](fields/tokens.md)
 * [Taxonomy select \(single and multiple\)](fields/taxonomy-select.md)
 * [Field group](fields/field-group.md)
 
