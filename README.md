@@ -1,4 +1,4 @@
-Alchemy Options is an options plugin for WordPress, simple but powerful. Inspired by [OptionTree](https://wordpress.org/plugins/option-tree/) and [Archetype](https://our.umbraco.org/projects/backoffice-extensions/archetype/).
+Alchemy Options is an options plugin for WordPress, simple but powerful. Inspired by [OptionTree](https://wordpress.org/plugins/option-tree/) and [Archetype](https://github.com/kgiszewski/Archetype).
 
 ## Features
 
