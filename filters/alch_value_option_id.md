@@ -2,7 +2,7 @@
 
 Dynamic filter `alch_value_{ $optionID }` is used to filter the value for a given [field](../fields/) before returning it from [`alch_get_option`](../functions/alch_get_option.md). It isn't applied to the `$default` parameter if the field has no value stored.
 
-The `$optionID` should match one of the IDs in the [configuration object](https://github.com/alchemyoptions/alchemy-options-docs/tree/8b2bf3bd7ce84655c638f5207b00fe1902d575b8/filters/Configuration.md).
+The `$optionID` should match one of the IDs in the [configuration object](../configuration.md).
 
 ## Example
 

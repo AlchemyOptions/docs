@@ -12,4 +12,4 @@ function change_default_page_icon() {
 add_filter( 'alch_default_page_icon', 'change_default_page_icon' );
 ```
 
-To modify the page icon on a per-page basis use the [alch_{ $optionsPageID }_icon](../filters/alch_%7B$optionsPageID%7D_icon.md) hook.
+To modify the page icon on a per-page basis use the [alch_{ $optionsPageID }_icon](../filters/alch_options_page_id_icon.md) hook.

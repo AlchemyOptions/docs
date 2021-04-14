@@ -12,4 +12,4 @@ function change_default_page_capabilities() {
 add_filter( 'alch_default_page_capabilities', 'change_default_page_capabilities' );
 ```
 
-To modify the page capabilities parameter on a per-page basis use the [alch_{ $optionsPageID }_capabilities](../filters/alch_%7B$optionsPageID%7D_capabilities.md) hook.
+To modify the page capabilities parameter on a per-page basis use the [alch_{ $optionsPageID }_capabilities](../filters/alch_options_page_id_capabilities.md) hook.

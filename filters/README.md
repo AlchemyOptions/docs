@@ -12,8 +12,8 @@
 
 ## Dynamic filters
 
-* [alch\_{ $optionsPageID }\_capabilities](alch_%7B$optionsPageID%7D_capabilities.md)
-* [alch\_{ $optionsPageID }\_icon](alch_%7B$optionsPageID%7D_icon.md)
-* [alch\_{ $optionsPageID }\_position](alch_%7B$optionsPageID%7D_position.md)
-* [alch\_value\_{ $optionID }](alch_value_%7B$optionID%7D.md)
-* [alch\_network\_value\_{ $optionID }](alch_network_value_%7B$optionID%7D.md)
+* [alch\_{ $optionsPageID }\_capabilities](alch_options_page_id_capabilities.md)
+* [alch\_{ $optionsPageID }\_icon](alch_options_page_id_icon.md)
+* [alch\_{ $optionsPageID }\_position](alch_options_page_id_position.md)
+* [alch\_value\_{ $optionID }](alch_value_option_id.md)
+* [alch\_network\_value\_{ $optionID }](alch_network_value_option_id.md)

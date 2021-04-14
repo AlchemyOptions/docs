@@ -12,4 +12,4 @@ function change_default_page_position() {
 add_filter( 'alch_default_page_position', 'change_default_page_position' );
 ```
 
-To modify the page position parameter on a per-page basis use the [alch_{ $optionsPageID }_position](../filters/alch_%7B$optionsPageID%7D_position.md) hook.
+To modify the page position parameter on a per-page basis use the [alch_{ $optionsPageID }_position](../filters/alch_options_page_id_position.md) hook.
