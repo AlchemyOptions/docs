@@ -25,7 +25,7 @@ This will add an options page to the WordPress sidebar.
 
 ![](.gitbook/assets/options-page-in-sidebar.png)
 
-By default, top-level pages are added after the Appearance section, but you can filter the page position, capabilities and icon via respective hooks.
+By default, top-level pages are added after the Appearance section, but you can filter the page [position](filters/alch_default_page_position.md), as well as its [capabilities](filters/alch_default_page_capabilities.md) and [icon](filters/alch_default_page_icon.md) via respective hooks.
 
 ## Creating option pages with subpages
 
