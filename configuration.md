@@ -114,36 +114,18 @@ If there's a need to split options into several groups, Alchemy Options has got 
 ```php
 ...
 'tabs' => array(
-    'tab-one-id' => array(
-        'title' => 'Tab one'
+    array(
+        'id' => 'tab-1',
+        'name' => 'Name'
     ),
-    'tab-two-id' => array(
-        'title' => 'Tab two'
+    array(
+        'id' => 'tab-2',
+        'name' => 'Name 2'
     ),
 )
 ...
 ```
 
-Keys of the `tabs` array should be unique, these values will be used in configuring of each option with the `tab` key. If no `tab` key is found in each option's settings it will be rendered in each tab.
-
-Thus, the `$options` variable from above will look like this:
-
-```php
-...
-$options = array(
-    'tabs' => array(
-        'tab-one-id' => array(
-            'title' => 'Tab one'
-        ),
-        'tab-two-id' => array(
-            'title' => 'Tab two'
-        ),
-    ),
-    'options' => array(
-      /* options will go here */
-    )
-);
-...
-```
+IDs of the tabs should be unique, these values will be used in configuring of each option with the `tab` key. If no `tab` key is found in the option's settings it will be rendered in each tab.
 
 If there's a need to split options even further, there's a [`sections`](fields/sections.md) type for visual splitting of fields into togglable sections and a [`field-group`](fields/field-group.md) type to group related fields together for an easier [value retrieval](functions/alch_get_option.md).
