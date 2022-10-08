@@ -1,6 +1,6 @@
 # Configuration
 
-Make sure you have Alchemy Options [installed](installation.md#using-alchemy-options-as-a-plugin).
+Make sure you have Alchemy Options [installed](installation.md).
 
 ## Creating option pages
 
