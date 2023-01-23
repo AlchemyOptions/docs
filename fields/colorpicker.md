@@ -10,7 +10,10 @@ array(
     'title' => 'My colorpicker field title',
     'id' => 'colorpicker-option',
     'desc' => 'Short description for the field',
-    'tab' => 'main',
+    'place' => array(
+        'page' => 'my-options-page',
+        'tab' => 'main',
+    ),
     'type' => 'colorpicker',
 ),
 ...
@@ -26,7 +29,7 @@ This will produce the following
 | :--- | :--- | :--- |
 | `type` | string | `colorpicker` **\(required\)** |
 | `id` | string | Unique ID that will be used to retrieve the value **\(required\)** |
-| `tab` | string | Specifies in which tab this option will be rendered |
+| `place` | array | Specifies where (page and tab) this option will be rendered |
 | `title` | string | Shows a heading to the left of the field |
 | `desc` | string | Shows a description text \(can have HTML\) |
 
