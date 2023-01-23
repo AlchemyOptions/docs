@@ -10,8 +10,11 @@ array(
     'title' => 'My text field title',
     'id' => 'text-option',
     'desc' => 'Short description for the field',
-    'tab' => 'main',
     'type' => 'text',
+    'place' => array(
+        'page' => 'my-options-page',
+        'tab' => 'main',
+    ),
 ),
 ...
 ```
@@ -26,7 +29,7 @@ This will produce the following
 | :--- | :--- | :--- |
 | `type` | string | `text` **\(required\)** |
 | `id` | string | Unique ID that will be used to retrieve the value **\(required\)** |
-| `tab` | string | Specifies in which tab this option will be rendered |
+| `place` | array | Specifies where (page and tab) this option will be rendered |
 | `title` | string | Shows a heading to the left of the field |
 | `desc` | string | Shows a description text \(can have HTML\) |
 
